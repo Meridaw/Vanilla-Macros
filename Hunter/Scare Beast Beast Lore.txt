@@ -1,0 +1,3 @@
+Scare Beast if combat, else Beast Lore
+
+/script if UnitAffectingCombat("player") then CastSpellByName("Scare Beast") else CastSpellByName("Beast Lore") end

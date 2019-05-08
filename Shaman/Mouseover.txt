@@ -1,0 +1,3 @@
+Mouseover Healing Wave
+
+/script if UnitExists("mouseover") then TargetUnit("mouseover"); CastSpellByName("Healing Wave"); TargetUnit("playertarget") else CastSpellByName("Healing Wave") end

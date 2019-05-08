@@ -1,0 +1,4 @@
+Lay on Hands
+
+/Cast Lay on Hands
+/emote casts Lay on Hands on %t 

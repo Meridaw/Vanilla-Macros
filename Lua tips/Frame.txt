@@ -1,0 +1,3 @@
+To retrieve the name of the interface/addon frame you currently have your mousecursor hovered over
+
+/run DEFAULT_CHAT_FRAME:AddMessage(GetMouseFocus():GetName())

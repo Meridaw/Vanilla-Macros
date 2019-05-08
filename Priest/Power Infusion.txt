@@ -1,0 +1,4 @@
+Cast power infusion, send a tell to the target notifying them
+
+/cast Power Infusion
+/run if UnitExists"target"then SendChatMessage("PI on YOU!! 20% spellpower for 15secs","WHISPER",nil,UnitName"target")end

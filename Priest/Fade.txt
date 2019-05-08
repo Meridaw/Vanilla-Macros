@@ -1,0 +1,5 @@
+Fade
+
+/script UIErrorsFrame:Hide()
+/script SpellStopCasting()
+/script CastSpellByName("Fade",1) 

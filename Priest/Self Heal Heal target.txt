@@ -1,0 +1,21 @@
+Self Flash Heal/Flash Heal target
+
+/script UIErrorsFrame:Hide()
+/script SpellStopCasting()
+/script if UnitExists("target") then CastSpellByName("Flash Heal") else CastSpellByName("Flash Heal",1) end
+
+ 
+
+Self Heal/Heal target
+
+/script UIErrorsFrame:Hide()
+/script SpellStopCasting()
+/script if UnitExists("target") then CastSpellByName("Heal") else CastSpellByName("Heal",1) end
+
+ 
+
+Self Lesser Heal/Lesser heal target
+
+/script UIErrorsFrame:Hide()
+/script SpellStopCasting()
+/script if UnitExists("target") then CastSpellByName("Lesser Heal") else CastSpellByName("Lesser Heal",1) end 

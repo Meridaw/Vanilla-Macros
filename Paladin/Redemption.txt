@@ -1,0 +1,3 @@
+Redemption, else Holy Light
+
+/run if UnitIsDead("target") then CastSpellByName("Redemption") else CastSpellByName("Holy Light") end

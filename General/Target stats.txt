@@ -1,0 +1,21 @@
+Display target's armor and resist in chat (only works on self and NPCs)
+
+/run local b={"Armor","Holy","Fire","Nature","Frost","Shadow","Arcane"} a=UnitName("target").."'s stats: " for i=0,6 do a = a..b[i+1]..": "..UnitResistance("target", i)..", " end SendChatMessage(a)
+
+ 
+
+Display target's armor and resist in say
+
+/script u=UnitResistance y="target" a=u(y ,0) h=u(y ,1) f=u(y ,2) n=u(y ,3) fr=u(y ,4) s=u(y ,5) z=u(y ,6) SendChatMessage(UnitName(y).." has "..a.." Armor, "..h.." HR, "..f.." FR, "..n.." NR, "..fr.." FrR, "..s.." SR and "..z.." AR.", SAY)
+
+ 
+
+Display target's Attack power in say
+
+/script u=UnitAttackPower y="target" a=u(y ,0) SendChatMessage(UnitName(y).." has "..a.." Attack Power. ", SAY)
+
+ 
+
+Display target's armor and dps in say
+
+/run lowDmg, highDmg=UnitDamage("target") SendChatMessage("%t hits for "..math.ceil((lowDmg+highDmg)/2).." damage every "..tostring(math.floor(UnitAttackSpeed("target")*100)/100).." seconds and has "..UnitResistance("target",0).." Armor.","SAY") 

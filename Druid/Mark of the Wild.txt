@@ -1,0 +1,15 @@
+Adjust buff ranks due to target level
+
+/script Pre="Mark of the Wild(Rank " Sp={1,2,14,26,38,50} if (UnitLevel("target") ~= nil and UnitIsFriend("player","target")) then for i=5,1,-1 do if (UnitLevel("target") >= Sp) then CastSpellByName(Pre..i..")") return end end end
+
+ 
+
+Mark of the Wild, else Thorns
+
+/run local i,x=1,0 while UnitBuff("player",i) do if UnitBuff("player",i)=="Interface\\Icons\\Spell_Nature_Regeneration" then x=1 end i=i+1 end if x==0 then CastSpellByName("Mark of the Wild") else CastSpellByName("Thorns") end
+
+ 
+
+Mark of the Wild/Faerie Fire
+
+/run if UnitCanAttack("player","target") == 1 then CastSpellByName("Faerie Fire")else CastSpellByName("Mark of the Wild")end

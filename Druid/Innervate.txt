@@ -1,0 +1,20 @@
+This will Innervate weapon swap if you put your +spirit staff in the 1st slot of your backpack
+
+/script UseContainerItem(0,1)
+/script TargetUnit("player")
+/cast Innervate
+/script TargetLastTarget()
+
+ 
+
+Innervate on yourself and retarget last target
+
+/script TargetUnit("player")
+/cast Innervate
+/script TargetLastTarget()
+
+ 
+
+No double-innervate (Useful for raids)
+
+/run t="target" p="player" b="Innervate" if (UnitIsFriend(p,t) and UnitManaMax(t)>200) then for i=1,16 do if UnitBuff(t,i) then if not string.find(UnitBuff(t,i), b) then CastSpellByName(b) end end end else ChatFrame1:AddMessage("Did not "..b.."!") end

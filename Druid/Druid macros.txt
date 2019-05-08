@@ -1,0 +1,92 @@
+Innervate and whisper to target
+
+/cast Innervate
+/run if UnitExists"target"then SendChatMessage("flavor text","WHISPER",nil,UnitName"target")end
+
+
+ 
+
+Rebirth and yell
+
+/cast Rebirth(Rank 5)
+/y Casting Rebirth on %T!
+
+
+ 
+
+Nature's Swiftness and Max Healing Touch combo
+
+/cast Nature's Swiftness
+/cast Healing Touch(Rank 11)
+
+
+ 
+
+Barkskin with auto remove
+
+/run local i=0 g=GetPlayerBuff while not (g(i) == -1) do if(strfind(GetPlayerBuffTexture(g(i)),"Spell_Nature_StoneClawTotem"))then CancelPlayerBuff(g(i)) end i = i + 1; end; CastSpellByName("Barkskin")
+
+Clicking once casts Barkskin. Clicking again will remove it.
+
+
+ 
+
+Faerie Fire in any form
+
+/script i=1;m=0;while(UnitBuff("player",i)~=nil) do if(strfind(UnitBuff("player",i),"Form")~=nil) then m=1; end;i=i+1;end; c=CastSpellByName; if(m==1) then c("Faerie Fire (Feral)()");else c("Faerie Fire(Rank 4)");end;
+
+
+ 
+
+Bear, Cat, and Shapeshift Macros
+ 
+
+Enrage with auto remove
+
+/run local i=0 g=GetPlayerBuff while not (g(i) == -1) do if(strfind(GetPlayerBuffTexture(g(i)),"Ability_Druid_Enrage"))then CancelPlayerBuff(g(i)) end i=i+1 end CastSpellByName("Enrage")
+
+Clicking once casts Enrage. Clicking again will remove it.
+
+
+ 
+
+Ravage and Shred auto select
+
+/script i=1;m=0;while(UnitBuff("player",i)~=nil) do if(strfind(UnitBuff("player",i),"Ability_Ambush")~=nil) then m=1; end;i=i+1;end; c=CastSpellByName; if(m==1) then c("Ravage(rank 4)");else c("Shred(rank 5)");end;
+
+
+ 
+
+Claw and Ferocious Bite combo
+
+/run if GetComboPoints()>=4 then CastSpellByName("Ferocious Bite") else CastSpellByName("Claw") end
+
+Change 4 to 5 if you want it to build to 5 combo points before Ferocious Bite casts
+
+ 
+
+Shred and Ferocious Bite combo
+
+/run if GetComboPoints()>=4 then CastSpellByName("Ferocious Bite") else CastSpellByName("Shred") end
+
+Change 4 to 5 if you want it to build to 5 combo points before Ferocious Bite casts
+
+ 
+
+Shred and Powershifting
+
+/cast Shred(Rank 5)
+/script u=UnitMana('Player'); c=CastSpellByName; f=UnitPowerType("Player"); if (u<=30) and (f==3) then c"Cat Form"; elseif (f==0) then c"Cat Form"; end;
+
+Energy level is set to 30. Change to a different number for a different cutoff for when you shift to caster
+
+ 
+
+Shred, Ferocious Bite, and Powershifting one button brainless option
+
+/run if GetComboPoints()>=4 then CastSpellByName("Ferocious Bite") else CastSpellByName("Shred") end
+/script u=UnitMana('Player'); c=CastSpellByName; f=UnitPowerType("Player"); if (u<=30) and (f==3) then c"Cat Form"; elseif (f==0) then c"Cat Form"; end;
+
+
+
+Made by Taladril 

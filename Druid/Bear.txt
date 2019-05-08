@@ -1,0 +1,15 @@
+Bear Form from any form, 2 clicks.
+
+/script local s,_ for i=1,5 do _,_,s=GetShapeshiftFormInfo(i)if s then CastShapeshiftForm(i)break end end if not s then CastShapeshiftForm(1) end
+
+ 
+
+Spammable bear form/feral charge
+
+/run local _, _, active = GetShapeshiftFormInfo(1) if not active or IsControlKeyDown() then CastShapeshiftForm(1) else CastSpellByName("Feral Charge")end
+
+ 
+
+Switch f﻿ro﻿m any stance to﻿ Bear form, cast Bush
+
+/run local _, _, active = GetShapeshiftFormInfo(1) if not active or IsControlKeyDown() then for i = 2, 4 do _, _, active = GetShapeshiftFormInfo(i) if active then CastShapeshiftForm(i) return end end CastShapeshiftForm(1) else CastSpellByName"Bash" end 

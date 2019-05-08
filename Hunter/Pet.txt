@@ -1,0 +1,149 @@
+Pet bar macro (the skills are 1,2,3,4,5 from left to right)
+
+/script CastPetAction(5);
+
+ 
+
+Pet attack
+
+/script PetAttack()
+
+ 
+
+Passive pet
+
+/script PetPassiveMode();
+
+ 
+
+Pet follow
+
+/script PetFollow();
+
+ 
+
+Toggle Autocast (the skills are 1,2,3,4,5 from left to right)
+
+/script TogglePetAutocast(5)
+
+ 
+
+Insta dismiss
+
+/Script PetDismiss()
+
+ 
+
+One button pet follow/stay
+
+/run local _,_,_,_,x = GetPetActionInfo(2); if x then PetWait() else PetFollow() end
+
+ 
+
+Target/Tame Beast (edit Lupos for next pet name)
+
+/run TargetByName("Lupos", exactMatch);
+/run if not CastingBarFrame.channeling then CastSpellByName("Tame Beast"); end;
+
+ 
+
+Adjust the automatic casting of pet based on target
+
+/script PetAttack() local x,p,j,e,_={1,1,1},UnitPowerType("target");if UnitIsPlayer("target") then if p==0 then x={nil,1,1};else x={nil,1,1};end;end;for j=4,7 do _,_,_,_,_,_,e=GetPetActionInfo(j);if x[j-3]~=e then TogglePetAutocast(j);end;end;
+
+ 
+
+Turn Autogrowl on
+
+/ru﻿n local i,g=1,0 while GetSpellName(i,"pet") do if GetSpellName(i,"pet")=="Growl" then g=i end i=i+1 end local _,y = GetSpellAutocast(g,"pet") if not y then ToggleSpellAutocast(g,"pet") end
+
+ 
+
+Turn Autogrowl off
+
+/run local i,g=1,0 while GetSpellName(i,"pet") do if GetSpellName(i,"pet")=="Growl" then g=i end i=i+1 end local _,y = GetSpellAutocast(g,"pet") if y then ToggleSpellAutocast(g,"pet") end
+
+ 
+
+Disables growl whenever you tell your pet to attack a player in PvP
+
+/script local i,g=1,0 while GetSpellName(i,"pet") do if GetSpellName(i,"pet")=="Growl" then g=i end i=i+1 end local _,y = GetSpellAutocast(g,"pet") if (y and UnitFactionGroup("target")) then ToggleSpellAutocast(g,"pet") end
+/script PetAttack();
+
+ 
+
+Spammable Prowl
+
+/script local i,x=1,0 while UnitBuff("pet",i) do if string.find(UnitBuff("pet",i),"Prowl") then x=1 end i=i+1 end if x==0 then CastSpellByName("Prowl");end
+
+ 
+
+Feed Pet (edit Tender Wolf Steak)
+
+/run for b=0,4 do for s=1,GetContainerNumSlots(b,s)do local n=GetContainerItemLink(b,s)if n and (strfind(n,"Tender Wolf Steak"))then PickupContainerItem(b,s)CastSpellByName("Feed Pet")end end end
+
+ 
+
+Pet attack/follow (edit YOURNAMEHERE)
+
+/script if UnitExists("target") then if a==0 then PetAttack(target) a=1 else if UnitExists("pettarget") and UnitIsUnit("target", "pettarget") then PetFollow("YOURNAMEHERE") a=0 else PetAttack(target) end;end; else PetFollow("YOURNAMEHERE") a=0 end
+	
+	
+	
+Call Pet, Revive Pet or Mend Pet
+
+/run if not UnitExists("pet") then CastSpellByName("Call Pet") else if UnitIsDead("pet") then CastSpellByName("Revive Pet") else CastSpellByName("Mend Pet") end end
+	
+	
+	
+Call/dismiss/revive/heal/feed
+
+/run c=CastSpellByName p="pet" h=UnitHealth(p)if not UnitExists(p)then c("Call Pet")elseif h<1 then c("Revive Pet")elseif GetPetHappiness()<3 then c("Feed Pet")PickupContainerItem(3, 12)elseif h<UnitHealthMax(p)then c("Mend Pet")else c("Dismiss Pet")end
+
+ 
+
+Feeds, Dismisses, Calls or Revives Pet according to whatever is appropriate
+
+/run local c=CastSpellByName if UnitExists("pet") then if UnitHealth("pet")==0 then c("Revive Pet") elseif GetPetHappiness()~=nil and GetPetHappiness()~=3 then c("Feed Pet") PickupContainerItem(3, 1) else c("Dismiss Pet") end else c("Call Pet") end
+
+The bags are numbered starting at 0 for the blizzard bag 1, 2 3 4 for the remaining. So if you wanted to use the first slot in the blizzard bag you would change (3,1) to "(0, 1)" or if you wanted to use the 2nd slot in the 3rd bag it would be "(2, 2)"
+
+
+
+If you're targeting a mob and you dont have a mouseover target then the pet will attack your main target and if you do have a mouseover target the pet will attack that target instead so you dont have to switch your own main target and lose DPS
+
+/script if UnitCanAttack("player","mouseover") then TargetUnit("mouseover");PetAttack();TargetUnit("playertarget"); else PetAttack(); end
+
+ 
+
+/run local a=UnitExists("mouseover")and"mouseover"or"target"if UnitIsFriend("player",a)then a=a.."target"end;if UnitCanAttack("player",a)then if not UnitIsUnit(a,"pettarget")then TargetUnit(a)PetAttack()return end end;PetFollow()
+	
+	
+	
+	
+Target nearest enemy, Hunter`s Mark and Pet Attack
+
+/script if GetUnitName("target")==nil then TargetNearestEnemy() end; CastSpellByName("Hunter's Mark); PetAttack()
+
+ 
+
+Petattack+Hunter's Mark+autoshot (Put Auto Shot in action slot 1)
+
+/run PetDefensiveMode() PetAttack() if CheckInteractDistance("target",3) and (not PlayerFrame.inCombat) then AttackTarget() elseif not IsAutoRepeatAction(1) then cast("Auto Shot") end if not buffed("Hunter's Mark",'target') then cast("Hunter's Mark")end 
+
+ 
+
+This will find a target and send your pet to attack while keeping him in passive mode, second click will bring pet back to you.
+
+/script if GetUnitName("target")==nil then TargetNearestEnemy() end
+/script CastPetAction(10);
+/script if UnitExists("target") then if a==0 then PetAttack(target) a=1 else if UnitExists("pettarget") and UnitIsUnit("target", "pettarget") then PetFollow("YOURNAMEHERE") a=0 else PetAttack(target) end;end; else PetFollow("YOURNAMEHERE") a=0 end;
+
+ 
+
+Modfied the above to also cast Hunter's Mark (just once, will not apply it if the mob is already marked)
+
+/script if GetUnitName("target")==nil then TargetNearestEnemy() end
+/script CastPetAction(10);
+/script if UnitExists("target") then if a==0 then PetAttack(target) a=1 else if UnitExists("pettarget") and UnitIsUnit("target", "pettarget") then PetFollow("YOURNAMEHERE") a=0 else PetAttack(target) end;end; else PetFollow("YOURNAMEHERE") a=0 end
+/script if not buffed("Hunter's Mark","target") then CastSpellByName("Hunter's Mark") end

@@ -1,0 +1,91 @@
+Pet bar macro (the skills are 1,2,3,4,5 from left to right)
+
+/script CastPetAction(5);
+
+ 
+
+Pet attack
+
+/script PetAttack()
+
+ 
+
+Passive pet
+
+/script PetPassiveMode();
+
+ 
+
+Pet follow
+
+/script PetFollow();
+
+ 
+
+Toggle Autocast (the skills are 1,2,3,4,5 from left to right)
+
+/script TogglePetAutocast(5)
+
+ 
+
+Rename demon
+
+/script PetAbandon();
+
+ 
+
+Pet attack/follow (edit YOURNAMEHERE)
+
+/script if UnitExists("target") then if a==0 then PetAttack(target) a=1 else if UnitExists("pettarget") and UnitIsUnit("target", "pettarget") then PetFollow("YOURNAMEHERE") a=0 else PetAttack(target) end;end; else PetFollow("YOURNAMEHERE") a=0 end
+	
+	
+	
+Fire Shield, or Devour Magic if friendly target, else Sacrifice, Seduce target, or Devour Magic self
+
+/run if UnitIsFriend("player", "target")then CastSpellByName("Devour Magic")CastSpellByName("Fire Shield")else CastSpellByName("Sacrifice")CastSpellByName("Seduction") CastSpellByName("Devour Magic",1)end
+
+ 
+
+Cast the pet skill that is available if target, if no target pet follows you and casts the pet skill that is available on you
+
+/run if(UnitExists("target")) then CastSpellByName("Devour Magic")CastSpellByName("Sacrifice")CastSpellByName("Seduction")CastSpellByName("Fire Shield")else PetFollow() CastSpellByName("Devour Magic",1)CastSpellByName("Sacrifice")end 
+	
+	
+	
+Self dispel without losing target
+
+/run CastSpellByName('Devour Magic', 1)
+
+ 
+
+Casts devour magic on your self if target is hostile
+
+/run if UnitExists("pettarget")==1 then if UnitIsFriend("player","pettarget") then CastSpellByName("Devour Magic") else CastSpellByName("Devour Magic", 1)end else TargetLastEnemy()end 
+
+ 
+
+Casts Devour Magic on the target, or on mouseover target (without losing current target)
+
+/run c=CastSpellByName s="Devour Magic(Rank 4)" if IsShiftKeyDown() then c(s,1) else if UnitExists("mouseover") then TargetUnit("mouseover") c(s) TargetLastTarget() else c(s) end end
+
+ 
+
+Cast as normal if friendly target, else self cast
+
+/script c=CastSpellByName t=UnitExists f=UnitIsFriend if t("target") and not f("player", "target") then c("Devour Magic", 1) elseif not t("target") then c("Devour Magic", 1) else c("Devour Magic") end;
+	
+	
+	
+Summon/Sacrifice Voidwalker
+
+/cast Fel Domination
+/cast Summon Voidwalker(Summon)
+/cast Sacrifice(Rank 6)
+
+
+
+Imp Fire Shield
+
+/run local c=CastSpellByName if UnitExists("target")then c("Fire Shield")else TargetUnit("player")c("Fire Shield")end ClearTarget()
+
+else I'd recommend using TargetLastTarget() instead of ClearTarget() at the end

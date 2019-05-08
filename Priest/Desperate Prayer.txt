@@ -1,0 +1,5 @@
+Desperate Prayer
+
+/script UIErrorsFrame:Hide()
+/script SpellStopCasting()
+/script CastSpellByName("Desperate Prayer",1)

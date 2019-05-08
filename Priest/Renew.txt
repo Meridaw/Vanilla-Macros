@@ -1,0 +1,10 @@
+Cast Renew if your target doesn't already have the renew buff
+
+/run local check=true; for i=1,32 do if UnitBuff("target",i)~=nil then if string.find(UnitBuff("target",i),"Spell_Holy_Renew") then check=false; end end end if check==true then CastSpellByName("Renew"); end
+
+ 
+
+Don't double up on Renew
+
+/script UIErrorsFrame:Hide()
+/script if UnitExists("target") and UnitIsFriend("target", "player") then if not buffed("Renew", 'target') then CastSpellByName("Renew") end return end if not buffed("Renew", 'player') then cast("Renew",1) end 
