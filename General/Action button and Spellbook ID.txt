@@ -23,3 +23,24 @@ Find SpellBookID (replace SpellName in "SpellName")
 If you want to test you have the right spell type this into the chat window (replace X with the number you want to test)
 
 /script DEFAULT_CHAT_FRAME:AddMessage(GetSpellName(X,0)); 
+
+
+
+Bags are numbered on the right, (4) (3) (2) (1) (default bag, number I do not know)
+Slots in bags are numbered like this:
+1 2 3 4
+5 6 7 8
+9 10 .... etc
+
+
+
+In the inventory, the slots are numbered like this:
+1_______10
+2_______6
+3_______7
+15______8
+4_______11
+5_______12
+19______13
+9_______14
+16 17 18
