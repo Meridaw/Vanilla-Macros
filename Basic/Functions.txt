@@ -150,6 +150,8 @@ SetSelectedBattlefield (index) - it becomes available.
 ShowBattlefieldList (index) - Displays a queue window for the specified battlefield. Only works if you are already in a queue for the battlefield. Index match to queue array.
 ToggleBattlefieldMinimap () - Toggles the Battlefield Minimap.
 
+
+
 Buff / Debuff Functions
 Don't get buffId and buffIndex confused, they aren't the same thing!
 
@@ -687,6 +689,7 @@ GetTradeSkillReagentItemLink(index, reagentId) - Gets the link string for a trad
 GetTradeTargetItemLink(id) - Returns link to a trade item.
 OffhandHasWeapon() - Determine if your offhand carries a weapon.
 UI SetItemRef(link, text, button) - Handles item link tooltips in chat.
+
 
 
 Item Text Functions
