@@ -47,6 +47,13 @@ Powershift/shred
 
 
 
+Spammable powershifting macro for cat form (tnx alkzn)
+
+/cast Cat form
+/run local f=GcT or CreateFrame("Frame","GcT") f:SetScript("OnUpdate",function() f:Hide() end) f:Show()
+
+
+
 Unshift + cat + dash
 
 /run local f=0 for i=1,GetNumShapeshiftForms()do if({GetShapeshiftFormInfo(i)})[3]then f=i end end if f ~= 0 and f ~= 3 then CastShapeshiftForm(f) else if f == 3 then CastSpellByName("Dash") else CastShapeshiftForm(3) end end
