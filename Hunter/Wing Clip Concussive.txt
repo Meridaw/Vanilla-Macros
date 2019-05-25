@@ -1,6 +1,6 @@
-Wing Clip if melee range, else Concussion shot
+Wing Clip if melee range, else Concussive Shot
 
-/run if CheckInteractDistance("target",3) then CastSpellByName("Wing Clip") else CastSpellByName("Concussion Shot"); end
+/run if CheckInteractDistance("target",3) then CastSpellByName("Wing Clip") else CastSpellByName("Concussive Shot"); end
 
  
 
