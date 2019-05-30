@@ -33,6 +33,11 @@ Slots in bags are numbered like this:
 9 10 .... etc
 
 
+Can also use this macro to find bag slot ID:
+
+/run print(GetMouseFocus():GetParent():GetID()..", "..GetMouseFocus():GetID())
+
+
 
 In the inventory, the slots are numbered like this:
 1_______10
