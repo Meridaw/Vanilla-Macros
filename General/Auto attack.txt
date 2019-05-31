@@ -1,4 +1,4 @@
-Spammable Auto Attack Macro w/ Melee and Ranged swapping (put Shoot or Auto Shot into action slot 1)
+Spammable Auto Attack Macro w/ Melee and Ranged swapping (put Shoot or Auto Shot into action slot 1, and also Attack in any action slot)
 
 /run if CheckInteractDistance("target", 3) and (not PlayerFrame.inCombat) then AttackTarget() elseif not IsAutoRepeatAction(1) then CastSpellByName("Auto Shot OR Shoot") end
 
