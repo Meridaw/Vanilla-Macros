@@ -15,3 +15,9 @@ Target/Mashable Wand (Put Shoot in action slot 12)
 
 /script UIErrorsFrame:Hide()
 /script if (UnitName('target')==nil) then TargetNearestEnemy() else if not IsAutoRepeatAction(12) then CastSpellByName("Shoot") end;end 
+
+
+
+Spammable auto Attack/Shoot (put "Shoot" into action slot 1, and also "Attack" into any action slot)
+
+/run if CheckInteractDistance("target", 3) and (not PlayerFrame.inCombat) then AttackTarget() elseif not IsAutoRepeatAction(6) then CastSpellByName("Shoot") end
