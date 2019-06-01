@@ -1,0 +1,9 @@
+Rake/Claw
+
+/run local i,x=1,0 while UnitDebuff("target",i) do if UnitDebuff("target",i)=="Interface\\Icons\\Ability_Druid_Disembowel" then x=1 end i=i+1 end if x==0 then CastSpellByName("Rake") else CastSpellByName("Claw")end
+
+
+
+Claw/Ferocious Bite
+
+/run if GetComboPoints()>=4 then CastSpellByName("Ferocious Bite") else CastSpellByName("Claw") end

@@ -1,0 +1,3 @@
+Shred/Ferocious Bite
+
+/run if GetComboPoints()>=4 then CastSpellByName("Ferocious Bite") else CastSpellByName("Shred") end

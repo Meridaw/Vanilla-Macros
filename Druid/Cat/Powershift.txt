@@ -1,0 +1,18 @@
+Powershift/shred
+
+/script u=UnitMana('Player'); c=CastSpellByName; f=UnitPowerType("Player"); if (u<=30) and (f==3) then c"Cat Form"; elseif (f==0) then c"Cat Form"; end;
+/cast Shred
+
+
+
+Spammable powershifting macro for cat form (tnx alkzn)
+
+/cast Cat form
+/run local f=GcT or CreateFrame("Frame","GcT") f:SetScript("OnUpdate",function() f:Hide() end) f:Show()
+
+
+
+Shred, Ferocious Bite, and Powershifting one button brainless option
+
+/run if GetComboPoints()>=4 then CastSpellByName("Ferocious Bite") else CastSpellByName("Shred") end
+/script u=UnitMana('Player'); c=CastSpellByName; f=UnitPowerType("Player"); if (u<=30) and (f==3) then c"Cat Form"; elseif (f==0) then c"Cat Form"; end;
