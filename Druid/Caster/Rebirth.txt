@@ -1,0 +1,4 @@
+Rebirth and yell
+
+/cast Rebirth(Rank 5)
+/y Casting Rebirth on %T!

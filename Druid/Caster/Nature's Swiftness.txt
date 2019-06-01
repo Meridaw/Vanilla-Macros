@@ -16,3 +16,10 @@ Nature's Swiftness + Healing Touch - without global cooldown
 Nature's Swiftness, Wrath/Healing Touch
 
 /run CastSpellByName("Nature's Swiftness") if UnitCanAttack("player","target") == 1 then CastSpellByName("Wrath") else CastSpellByName("Healing Touch")end
+
+
+
+Nature's Swiftness and Max Healing Touch combo
+
+/cast Nature's Swiftness
+/cast Healing Touch(Rank 11)
