@@ -28,17 +28,29 @@ One button Prowl/Ravage
 
  
 
-One button ravage/shred
+One button Ravage/Shred
 
 /run local i,x=1,0 while UnitBuff("player",i) do if UnitBuff("player",i)=="Interface\\Icons\\Ability_Ambush" then x=1 end i=i+1 end if x==1 then CastSpellByName("Ravage") else CastSpellByName("Shred")end
 
  
 
-Rip/rake
+Rip/Rake
 
 /run if ( GetComboPoints() >= 3 ) then CastSpellByName("Rip"); else if (UnitMana("player") >= 40 ) then CastSpellByName("Rake")end end
 
  
+
+Claw/Ferocious Bite
+
+/run if GetComboPoints()>=4 then CastSpellByName("Ferocious Bite") else CastSpellByName("Claw") end
+
+
+
+Shred/Ferocious Bite
+
+/run if GetComboPoints()>=4 then CastSpellByName("Ferocious Bite") else CastSpellByName("Shred") end
+
+
 
 Powershift/shred
 
@@ -51,6 +63,13 @@ Spammable powershifting macro for cat form (tnx alkzn)
 
 /cast Cat form
 /run local f=GcT or CreateFrame("Frame","GcT") f:SetScript("OnUpdate",function() f:Hide() end) f:Show()
+
+
+
+Shred, Ferocious Bite, and Powershifting one button brainless option
+
+/run if GetComboPoints()>=4 then CastSpellByName("Ferocious Bite") else CastSpellByName("Shred") end
+/script u=UnitMana('Player'); c=CastSpellByName; f=UnitPowerType("Player"); if (u<=30) and (f==3) then c"Cat Form"; elseif (f==0) then c"Cat Form"; end;
 
 
 
