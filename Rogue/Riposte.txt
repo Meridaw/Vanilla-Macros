@@ -1,3 +1,9 @@
+Riposte, Sinister Strike
+
+/cast Riposte
+/cast Sinister Strike
+
+
 Riposte & Sinister Strike
 
 /script local isUsable, IsUsable = IsUsableAction (n);if (isUsable) CastSpellByName("Riposte()") else CastSpellByName("Sinister Strike()");end
