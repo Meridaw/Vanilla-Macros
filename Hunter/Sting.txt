@@ -20,3 +20,8 @@ Pet passive, Feign Death if combat, else Wyvern Sting
 
 /run PetPassiveMode() if UnitAffectingCombat("player") then CastSpellByName("Feign Death")end
 /cast Wyvern Sting
+
+
+Viper/Scorpid/Serpent Sting
+
+/script class=UnitClass("target") c=CastSpellByName; if UnitIsPlayer("target") and ((class=="Rogue") or (class=="Warrior")) then c("Scorpid Sting") elseif UnitIsPlayer("target") then c("Viper Sting") else c("Serpent Sting"); end
