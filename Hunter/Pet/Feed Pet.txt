@@ -1,0 +1,3 @@
+Feed Pet (edit Tender Wolf Steak)
+
+/run for b=0,4 do for s=1,GetContainerNumSlots(b,s)do local n=GetContainerItemLink(b,s)if n and (strfind(n,"Tender Wolf Steak"))then PickupContainerItem(b,s)CastSpellByName("Feed Pet")end end end
