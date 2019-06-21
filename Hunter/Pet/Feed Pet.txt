@@ -1,3 +1,9 @@
 Feed Pet (edit Tender Wolf Steak)
 
 /run for b=0,4 do for s=1,GetContainerNumSlots(b,s)do local n=GetContainerItemLink(b,s)if n and (strfind(n,"Tender Wolf Steak"))then PickupContainerItem(b,s)CastSpellByName("Feed Pet")end end end
+
+
+
+Feed pet whatever is in bag 0 slot 1
+
+/run CastSpellByName("Feed Pet")PickupContainerItem(0,1)
