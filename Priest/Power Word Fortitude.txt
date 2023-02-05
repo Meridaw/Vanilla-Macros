@@ -1,0 +1,3 @@
+Power Word: Fortitude, Divine Spirit, else Inner Fire
+
+/run c=CastSpellByName function b(k)for i=1,16 do if strfind(tostring(UnitBuff("player",i)),k)then return 1 end end end if not b("WordFortitude")then c("Power Word: Fortitude",1)elseif not b("DivineSpirit")then c("Divine Spirit",1)else c("Inner Fire")end
