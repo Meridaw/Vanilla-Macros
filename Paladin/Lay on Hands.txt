@@ -1,4 +1,4 @@
-Lay on Hands
+Lay on Hands on target if target is a player, else Lay on Hands oneself
 
-/Cast Lay on Hands
-/emote casts Lay on Hands on %t 
+/run if UnitIsPlayer("target") then CastSpellByName("Lay on Hands") else CastSpellByName("Lay on Hands",1)end
+/emote casts Lay on Hands on %t
