@@ -1,3 +1,3 @@
 Desperate Prayer
 
-/run SpellStopCasting() CastSpellByName("Lesser Heal",1) UIErrorsFrame:Hide()
+/run SpellStopCasting() CastSpellByName("Desperate Prayer",1) UIErrorsFrame:Hide()
