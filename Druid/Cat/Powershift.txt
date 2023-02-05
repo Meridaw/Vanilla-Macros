@@ -1,14 +1,6 @@
 Powershift/shred (Energy level is set to 30, change to a different number for a different cutoff for when you shift to caster)
 
-/script u=UnitMana('Player'); c=CastSpellByName; f=UnitPowerType("Player"); if (u<=30) and (f==3) then c"Cat Form"; elseif (f==0) then c"Cat Form"; end;
-/cast Shred
-
-
-
-Spammable powershifting macro for cat form (tnx alkzn)
-
-/cast Cat form
-/run local f=GcT or CreateFrame("Frame","GcT") f:SetScript("OnUpdate",function() f:Hide() end) f:Show()
+/run u=UnitMana('Player'); c=CastSpellByName; f=UnitPowerType("Player"); if (u<=30) and (f==3) then c"Cat Form"; elseif (f==0) then c"Cat Form"; end; for z=1,172 do if IsAttackAction(z)then if not IsCurrentAction(z)then UseAction(z);end;end;end;c"Shred"
 
 
 
