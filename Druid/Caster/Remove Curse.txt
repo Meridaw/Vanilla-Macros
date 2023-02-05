@@ -1,0 +1,3 @@
+Remove Curse from target if target is a player, else Remove Curse from oneself
+
+/run if UnitIsPlayer("target") then CastSpellByName("Remove Curse") else CastSpellByName("Remove Curse",1)  end; TargetLastEnemy();
