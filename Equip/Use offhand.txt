@@ -1,0 +1,3 @@
+Use offhand
+
+/script UseInventoryItem(17);
