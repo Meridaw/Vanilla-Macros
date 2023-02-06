@@ -1,7 +1,3 @@
-Functions and slash commands found in SuperMacro:
-https://github.com/Monteo/SuperMacro/blob/master/functions.txt
-
-
 LUA tips, chat & raid macros:
 https://nirklars.wordpress.com/wow/vanilla-wow-lua-tips/
 
