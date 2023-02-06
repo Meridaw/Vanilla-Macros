@@ -1,3 +1,0 @@
-Mouseover and type the line to get name of an interface/addon object
-
-/run DEFAULT_CHAT_FRAME:AddMessage(GetMouseFocus():GetName())
