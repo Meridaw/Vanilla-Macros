@@ -1,0 +1,3 @@
+Blessing of Protection on target if a player, else Blessing of Protection oneself
+
+/run if UnitIsPlayer("target") then CastSpellByName("Blessing of Protection") else CastSpellByName("Blessing of Protection",1)  end
