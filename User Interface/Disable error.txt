@@ -1,35 +1,4 @@
-Disable Error Speech
-
-/run SetCVar("EnableErrorSpeech", 0) UIErrorsFrame:UnregisterEvent"UI_ERROR_MESSAGE" CastSpellByName"SPELLNAME" UIErrorsFrame:RegisterEvent"UI_ERROR_MESSAGE" SetCVar("EnableErrorSpeech", 1)
-
-or
-
-/console EnableErrorSpeech 0
-/run UIErrorsFrame:UnregisterEvent"UI_ERROR_MESSAGE"
-/run CastSpellByName"SPELLNAME"
-/run UIErrorsFrame:RegisterEvent"UI_ERROR_MESSAGE"
-/console EnableErrorSpeech 1
-
- 
-
-Error sound
-
-/Console MasterSoundEffects 0
-
-/Console MasterSoundEffects 1
-
- 
-
 Hide UIErrorsFrame
 
 /script UIErrorsFrame:Hide()
 
- 
-
-Disable audio for macro to cast spell
-
-/console Sound_EnableSFX 0
-/script if GetUnitName("target")==nil then TargetNearestEnemy() end
-/cast Fireball
-/console Sound_EnableSFX 1
-/script UIErrorsFrame:Clear(); 
