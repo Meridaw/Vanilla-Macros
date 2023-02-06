@@ -1,0 +1,3 @@
+Change actionbar
+ 
+/run if (CURRENT_ACTIONBAR_PAGE == 1) then CURRENT_ACTIONBAR_PAGE = 2; ChangeActionBarPage();  elseif(CURRENT_ACTIONBAR_PAGE == 2) then CURRENT_ACTIONBAR_PAGE = 1; ChangeActionBarPage(); end; 
