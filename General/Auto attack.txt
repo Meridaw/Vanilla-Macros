@@ -30,6 +30,6 @@ Melee shoot
 
  
 
-Shoot (wand) Replace X with the Slot id of the skill on your hotbar 
+Shoot (wand)
 
-/script if not IsAutoRepeatAction(X) then CastSpellByName("Shoot"); end
+/run if not CastingBarFrame.casting then CastSpellByName("Shoot")end UIErrorsFrame:Hide()
