@@ -9,3 +9,10 @@ Use trinket
 Use trinket if no cooldown
 
 /run if  GetInventoryItemCooldown("player", 13)==0 then UseInventoryItem(13)end 
+
+
+
+Stops casting spell and use both trinket slots if no cooldown
+ 
+/script if GetInventoryItemCooldown("player", 13) == 0 then UseInventoryItem(13); SpellStopCasting(); end
+/script if GetInventoryItemCooldown("player", 14) == 0 then UseInventoryItem(14); SpellStopCasting(); end
