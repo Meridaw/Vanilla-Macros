@@ -1,13 +1,13 @@
 # Vanilla 1.12 Macro Project
 
-> Useful inspiration and guidance for macro making.
+> Inspiration and guidance for macro making.
 
 ---
 
 ## How To Use
 
 Either click on the folders and text files on the github page to find more info or 
-click the green code button and select Download ZIP to download the files.
+click the green code button and select [Download ZIP](https://github.com/Meridaw/Vanilla-Macros/archive/refs/heads/master.zip) to download the files.
 [Notepad](https://notepad-plus-plus.org/) is useful to read or edit the files. 
 
 ---
