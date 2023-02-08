@@ -7,7 +7,7 @@
 ## How To Use
 
 Either click on the folders and text files on the github page to find more info or 
-click the green code button and select [Download ZIP](https://github.com/Meridaw/Vanilla-Macros/archive/refs/heads/master.zip) to download the files.
+click [Download ZIP](https://github.com/Meridaw/Vanilla-Macros/archive/refs/heads/master.zip) to download the files.
 [Notepad](https://notepad-plus-plus.org/) is useful to read or edit the files. 
 
 ---
