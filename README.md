@@ -6,9 +6,9 @@
 
 ## How To Use
 
-Click on the folders and text files in the github to find more info or 
+- Click on the folders and text files in the github to find more info or 
 click [Download ZIP](https://github.com/Meridaw/Vanilla-Macros/archive/refs/heads/master.zip) to download the files.
-[Notepad](https://notepad-plus-plus.org/) is useful to read or edit the files. 
+- [Notepad](https://notepad-plus-plus.org/) is useful to read or edit the files. 
 
 ---
 
