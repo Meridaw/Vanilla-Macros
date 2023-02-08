@@ -7,8 +7,7 @@ Start attack, Sinister strike
 
 Start attack, Sinister strike until 5 combo points then use Eviscerate
 
-/run for z=1,172 do if IsAttackAction(z)then if not IsCurrentAction(z)then UseAction(z);end;end;end;
-/run if GetComboPoints()>=5 then CastSpellByName("Eviscerate") else CastSpellByName("Sinister Strike") end
+/run for z=1,172 do if IsAttackAction(z) then if not IsCurrentAction(z) then UseAction(z) elseif GetComboPoints()>=5 then CastSpellByName("Eviscerate") else CastSpellByName("Sinister Strike") end end end UIErrorsFrame:Hide()
 
  
 
