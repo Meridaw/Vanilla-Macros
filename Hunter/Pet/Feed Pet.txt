@@ -1,6 +1,6 @@
-Feed Pet (edit Tender Wolf Steak)
+Feed Pet (edit Longjaw Mud Snapper)
 
-/run for b=0,4 do for s=1,GetContainerNumSlots(b,s)do local n=GetContainerItemLink(b,s)if n and (strfind(n,"Tender Wolf Steak"))then PickupContainerItem(b,s)CastSpellByName("Feed Pet")end end end
+/run for b=0,4 do for s=1,GetContainerNumSlots(b) do local o=GetContainerItemLink(b,s);if o and string.find(o,"Longjaw Mud Snapper") then CastSpellByName("Feed Pet"); PickupContainerItem(b,s);b=4;break;end;end;end
 
 
 
