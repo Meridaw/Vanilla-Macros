@@ -1,0 +1,12 @@
+Flame Shock, attack Target, or target nearest enemy
+
+/run if not PlayerFrame.inCombat then AttackTarget() end
+/cast Flame Shock
+/target NearestEnemy();
+
+ 
+
+Target enemy, Start attack, cast Flame Shock
+
+/run if not PlayerFrame.inCombat then AttackTarget() end if UnitExists("target") == nil or not UnitIsEnemy("target", "player") or UnitIsDead("target") ~= nil then TargetNearestEnemy() end
+/cast Flame Shock
