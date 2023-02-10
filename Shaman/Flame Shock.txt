@@ -1,4 +1,10 @@
-Flame Shock, attack Target, or target nearest enemy
+Flame Shock / Auto Attack
+
+/run for z=1,172 do if IsAttackAction(z)then if not IsCurrentAction(z)then UseAction(z)end;end;end; CastSpellByName("Flame Shock") UIErrorsFrame:Hide()
+
+
+
+Flame Shock, Auto Attack, Target Nearest Enemy
 
 /run if not PlayerFrame.inCombat then AttackTarget() end
 /cast Flame Shock
