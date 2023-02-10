@@ -1,0 +1,3 @@
+Windfury / Grace of Air
+
+/run if n~= 1 then CastSpellByName("Windfury Totem") n=1 else CastSpellByName("Grace of Air Totem") n=0 end
