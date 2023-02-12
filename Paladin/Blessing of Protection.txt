@@ -6,4 +6,4 @@ Blessing of Protection on target if a player, else Blessing of Protection onesel
 
 Cast Blessing of Protection on the target of your target if this target isn't you
 
-/run if not UnitIsUnit("player", "targettarget") then TargetUnit("targettarget") CastSpellByName("Blessing of Protection")end
+/run if not UnitIsUnit("player", "targettarget") then TargetUnit("targettarget") CastSpellByName("Blessing of Protection") TargetLastEnemy() end
