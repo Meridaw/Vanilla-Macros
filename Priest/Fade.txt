@@ -1,5 +1,11 @@
+Fade if in group, else Inner Fire
+
+/run SpellStopCasting() if UnitInParty("player") == true then CastSpellByName("Fade") else CastSpellByName("Inner Fire") end
+
+
+
 Fade
 
-/script UIErrorsFrame:Hide()
-/script SpellStopCasting()
-/script CastSpellByName("Fade",1) 
+/run UIErrorsFrame:Hide()
+/run SpellStopCasting()
+/run CastSpellByName("Fade",1) 
