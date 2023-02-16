@@ -1,6 +1,6 @@
 Fade if in group, else Inner Fire
 
-/run SpellStopCasting() if UnitInParty("player") == true then CastSpellByName("Fade") else CastSpellByName("Inner Fire") end
+/run SpellStopCasting() if GetNumPartyMembers() == 0 then CastSpellByName("Inner Fire") else CastSpellByName("Fade") end
 
 
 
