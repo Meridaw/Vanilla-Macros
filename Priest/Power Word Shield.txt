@@ -1,12 +1,10 @@
-Self Shield
+Stopcast, Shield target / self
 
-/script UIErrorsFrame:Hide()
-/script SpellStopCasting()
-/script CastSpellByName("Power Word: Shield",1)
+/run SpellStopCasting() if UnitIsPlayer ("target") then CastSpellByName("Power word: Shield") else CastSpellByName("Power word: Shield",1)  end UIErrorsFrame:Hide()
 
  
 
-Stopcast/Self Shield
+Stopcast, Self Shield
 
 /script SpellStopCasting()
 /script CastSpellByName('Power word: Shield', 1)
