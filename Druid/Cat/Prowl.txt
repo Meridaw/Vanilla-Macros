@@ -1,6 +1,6 @@
 Cat Form, else Prowl
 
-/run if (UnitPowerType('Player')==0) then CastSpellByName("Cat Form") else CastSpellByName("Prowl")end
+/run local _, _, active = GetShapeshiftFormInfo(3) if not active then CastShapeshiftForm(3) else CastSpellByName("Prowl")end
 
 
 
