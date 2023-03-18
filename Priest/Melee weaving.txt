@@ -1,9 +1,3 @@
-One button melee weaving
-
-/run if n~= 1 then CastSpellByName("Shoot") n=1 else CastSpellByName("Attack") n=0 end UIErrorsFrame:Hide()
-
-
-
 Shoot (Mouse wheel up)
  
 /run GGUseAction=GGUseAction or UseAction;UseAction=function(id,a,b)if not IsCurrentAction(id)and not IsAutoRepeatAction(id)then GGUseAction(id,a,b)end end CastSpellByName("Shoot") UIErrorsFrame:Hide()
