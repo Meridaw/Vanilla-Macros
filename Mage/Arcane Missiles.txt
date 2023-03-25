@@ -2,6 +2,12 @@ Spammable Arcane Missiles
 
 /script if not CastingBarFrame.channeling then CastSpellByName("Arcane Missiles") end
 
+
+
+Spammable Arcane Missiles
+
+/run if(CastingBarFrame.casting ~= 1 and CastingBarFrame.channeling ~= 1) then CastSpellByName("Arcane Missiles"); end;
+
  
 
 Throw rank 1 unless clear casting is active then cast max rank
