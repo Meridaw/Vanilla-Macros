@@ -4,9 +4,9 @@ Cancel Shadowform
 
 
 
-Cancel Shadowform, Flash Heal self / target
+Cancel Shadowform, Flash Heal self
 
-/run local i=0 g=GetPlayerBuff if not(g(i)==-1)then do if(strfind(GetPlayerBuffTexture(g(i)), "Shadowform"))then CancelPlayerBuff(g(i))end i=i+1 end end z,x=CastSpellByName,"Flash Heal" if UnitIsFriend ("player", "target") then z(x) else z(x,1)end
+/run local i=0 g=GetPlayerBuff if not(g(i)==-1)then do if(strfind(GetPlayerBuffTexture(g(i)), "Shadowform"))then CancelPlayerBuff(g(i))end i=i+1 end end CastSpellByName("Flash Heal",1)
 
 
 
