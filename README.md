@@ -27,7 +27,7 @@ click the green code button and select Download ZIP to download the files.
 
 ---
 
-## Addon
-[WowLuaVanilla](https://github.com/laytya/WowLuaVanilla) - Interactive Lua interpreter and scratchpad.
+## useful Addon
+- [WowLuaVanilla](https://github.com/laytya/WowLuaVanilla)
 
 ---
