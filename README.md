@@ -26,3 +26,8 @@ click the green code button and select Download ZIP to download the files.
 - [Lua 5.0 Reference Manual](https://www.lua.org/manual/5.0/)
 
 ---
+
+## Addon
+[WowLuaVanilla](https://github.com/laytya/WowLuaVanilla)
+
+---
