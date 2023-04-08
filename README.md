@@ -27,7 +27,7 @@ click the green code button and select Download ZIP to download the files.
 
 ---
 
-## useful Addon
+## Useful Addon
 - [WowLuaVanilla](https://github.com/laytya/WowLuaVanilla)
 
 ---
