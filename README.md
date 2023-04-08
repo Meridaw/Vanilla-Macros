@@ -23,7 +23,7 @@ click the green code button and select Download ZIP to download the files.
 - [Macro per maghi](https://www.freeforumzone.com/discussione.aspx?idd=5581207)
 - [Priest addons and Macros](http://orderofsargeras.com/phpBB2_resto/viewtopic.php?t=14&sid=d4903119e59b7a30276b0df4e64b3aed)
 - [Graguk's Warlock Macros](http://blue.cardplace.com/cache/wow-warlock/905421.htm)
-- [Lua](https://vanilla-wow-archive.fandom.com/wiki/Lua)
+- [Lua Wiki](https://vanilla-wow-archive.fandom.com/wiki/Lua)
 
 ---
 
