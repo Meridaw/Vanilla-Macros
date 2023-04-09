@@ -1,0 +1,5 @@
+Resurrection
+
+/s I'm resurrecting %T!
+/run local name = UnitName("target"); SendChatMessage("I'm resurrecting you!", "WHISPER", nil, name)
+/cast resurrection
