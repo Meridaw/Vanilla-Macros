@@ -1,5 +1,3 @@
-Timer
-
 Simple script to track the time elapsed from a set point in time.
 
 1. Clicking the script while holding the Alt key down will begin the timer and state so.
