@@ -62,7 +62,7 @@ Good for healing and crowd control spells. Example with a healing spell (Party m
 
 Cast a spell on party member based on his location in party
 
-This will target the "first" member of your party, cast a healing spell on him, then return you to your previous target. To use on 2nd member of party change "party1″ to "party2″.
+This will target the "first" member of your party, cast a healing spell on him, then return you to your previous target. To use on 2nd member of party change "party1" to "party2".
 
 /run TargetUnit("party1")
 /cast Flash Heal
@@ -108,7 +108,7 @@ Spells are numbered beginning with all pages found in your general abilities, fo
 
 Guestimate approximately what the spell number might be and modify the number assigned to SpellNumber (26 in the example).
 
-Click the script to view a local display of the spell number, name and rank "Spell 26: Arcane Explosion Rank 6″.
+Click the script to view a local display of the spell number, name and rank "Spell 26: Arcane Explosion Rank 6".
 
 Line breaks (carriage returns or ) have been added for legibility only. When copied into WoW, make sure the script is one line only.
 
@@ -324,7 +324,7 @@ SwitchMode:
 
 /run currentRes = GetCurrentResolution(); if (currentRes == 3) then SetScreenResolution(15); SetCVar("gxWindow", 0); SetMultisampleFormat(16);else SetCVar("gxWindow", 1); SetScreenResolution(3); SetMultisampleFormat(1); end;
 
-Replace the "15″ in SetScreenResolution with your selected high-res index, the "16″ in SetMultisampleFormat with your selected colour depth/anti-aliasing, and the "3″ in Set/GetScreenResolution with your preferred windowed res. To finish this one off, drop it into a popup button and go to key bindings, link in "alt-enter". That way, alt-enter will alternate between windowed and full-screen. You can also work in any of the above Farclip etc calls to further alter the settings between windowed and full-screen, depending on how your machine behaves – experiment and see.
+Replace the "15" in SetScreenResolution with your selected high-res index, the "16" in SetMultisampleFormat with your selected colour depth/anti-aliasing, and the "3" in Set/GetScreenResolution with your preferred windowed res. To finish this one off, drop it into a popup button and go to key bindings, link in "alt-enter". That way, alt-enter will alternate between windowed and full-screen. You can also work in any of the above Farclip etc calls to further alter the settings between windowed and full-screen, depending on how your machine behaves – experiment and see.
 
 Note also, I’m using GetCurrentResolution. I’d rather use GetCVar("gxWindow"), but I got very unreliable results from that – not sure why.
  
@@ -333,11 +333,11 @@ Toggle Name Display
 
 I like to shut off player names when I take screen shots, so here is what I use:
 
-/script if ( GetCVar("UnitNamePlayer") == "1″ ) then SetCVar("UnitNamePlayer",0) else SetCVar("UnitNamePlayer",1) end
+/script if ( GetCVar("UnitNamePlayer") == "1" ) then SetCVar("UnitNamePlayer",0) else SetCVar("UnitNamePlayer",1) end
 
 And for shutting off the NPC names I use this:
 
-/script if ( GetCVar("UnitNameNPC") == "1″ ) then SetCVar("UnitNameNPC",0) else SetCVar("UnitNameNPC",1) end
+/script if ( GetCVar("UnitNameNPC") == "1" ) then SetCVar("UnitNameNPC",0) else SetCVar("UnitNameNPC",1) end
 
  
 
@@ -396,7 +396,7 @@ Use the "Set" macro when you have your main assist player selected and want to s
 
 To save macro and action bar space, you can combine the two macros in the following script. To set the main assist player, hold down the control key while activating this macro. The version that fits into a 255 character macro is given below and it is somewhat obfuscated:
 
-/run p=PAsi or""u=UnitName;t="target"c=IsControlKeyDown()if(c)then p=u(t)or u("party1″)or""else AssistByName(p)end;DEFAULT_CHAT_FRAME:AddMessage("######## "..(c and("Set assist: "..p)or("Assisting "..p.." with "..(u(t)or"NO TARGET"))))PAsi=p
+/run p=PAsi or""u=UnitName;t="target"c=IsControlKeyDown()if(c)then p=u(t)or u("party1")or""else AssistByName(p)end;DEFAULT_CHAT_FRAME:AddMessage("######## "..(c and("Set assist: "..p)or("Assisting "..p.." with "..(u(t)or"NO TARGET"))))PAsi=p
 
 Here’s the same script with extra spacing and punctuation added for clarity:
 
@@ -434,7 +434,7 @@ Hold down shift to cast a Polymorph spell on the memorized target.
 
 Alt is ignored, so you can bind this to an alt key combination.
 
-To have multiple memorized targets, edit the Tg1 variable name in the three places where it is mentioned. Note that the short version below uses "ChatFrame1″ instead of "DEFAULT_CHAT_FRAME" to save a few characters to allow for longer spell and skill names than Polymorph. The human-readable version is given below the compact/obfuscated version.
+To have multiple memorized targets, edit the Tg1 variable name in the three places where it is mentioned. Note that the short version below uses "ChatFrame1" instead of "DEFAULT_CHAT_FRAME" to save a few characters to allow for longer spell and skill names than Polymorph. The human-readable version is given below the compact/obfuscated version.
 
 /run t=Tg1 or""c=IsControlKeyDown()if(c)then t=UnitName("target")or""else TargetByName(t)if(IsShiftKeyDown())then CastSpellByName(‘Polymorph’)end end ChatFrame1:AddMessage("######## "..(c and("Tg1 set to: "..t)or("Targeting: "..t)))Tg1=t
 
