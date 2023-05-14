@@ -16,6 +16,7 @@ click the green code button and select Download ZIP to download the files.
 
 - [Complete list of every addon or macro function](http://wowwiki.wikia.com/index.php?title=World_of_Warcraft_API&oldid=281620)
 - [LUA tips, chat & raid macros](https://nirklars.wordpress.com/wow/vanilla-wow-lua-tips/)
+- [Useful macros (1.0)](https://wowwiki-archive.fandom.com/wiki/Useful_macros_(1.0))
 - [Vanilla wow macros](https://nirklars.wordpress.com/wow/vanilla-wow-macros/)
 - [Most Used Macros](https://web.archive.org/web/20060813140631/http://www.wowwiki.com/Most_Used_Macros)
 - [Macros For Dummies](https://www.ownedcore.com/forums/world-of-warcraft/world-of-warcraft-guides/1038-macros-dummies.html)
