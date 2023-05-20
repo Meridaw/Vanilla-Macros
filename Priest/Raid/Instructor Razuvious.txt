@@ -1,0 +1,3 @@
+
+
+/run if not CastingBarFrame.channeling then CastSpellByName("Mind Control") else TargetByName("Instructor Razuvious", exactMatch);end CastPetAction(1);CastPetAction(2);CastPetAction(3);
