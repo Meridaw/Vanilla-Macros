@@ -28,7 +28,7 @@ click the green code button and select Download ZIP to download the files.
 
 ---
 
-## Useful Addon
+## Useful Addons
 - [pfStudio](https://github.com/shagu/pfStudio)
 - [WowLuaVanilla](https://github.com/laytya/WowLuaVanilla)
 
