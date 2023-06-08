@@ -10,7 +10,7 @@ Target armor and resist in say
 
  
 
-Target Attack power in say
+Target attack power in say
 
 /run u=UnitAttackPower y="target" a=u(y ,0) SendChatMessage(UnitName(y).." has "..a.." Attack Power. ", SAY)
 
@@ -25,3 +25,9 @@ Target armor and dps in say
 Target name and damage
 
 /run L, H = UnitDamage("target") DEFAULT_CHAT_FRAME:AddMessage(format("%s Dmg: %.0f - %.0f", GetUnitName("target"), L, H))
+
+
+
+Target attack speed in say
+
+/run u=UnitAttackSpeed y="target" a=u(y ,0) SendChatMessage(UnitName(y).." has "..a.." attacks per second. ", SAY)
