@@ -30,4 +30,4 @@ Target name and damage
 
 Target attack speed in say
 
-/run u=UnitAttackSpeed y="target" a=u(y ,0) SendChatMessage(UnitName(y).." has "..a.." attacks per second. ", SAY)
+/run u=UnitAttackSpeed y="target" a=u(y ,0) SendChatMessage(UnitName(y).." has "..a.." seconds per attack. ", SAY)
