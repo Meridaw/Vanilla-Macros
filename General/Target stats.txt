@@ -31,3 +31,9 @@ Target name and damage
 Target attack speed in say
 
 /run u=UnitAttackSpeed y="target" a=u(y ,0) SendChatMessage(UnitName(y).." has "..a.." seconds per attack. ", SAY)
+
+
+
+Target name, main hand damage and offhand damage
+
+/run ld, hd, old, ohd, pb, nb, pm = UnitDamage("target"); SendChatMessage(UnitName("target").."'s main hand attacks hit for "..ld.." to "..hd.. " and their offhand attacks hit for "..old.." to "..ohd);
