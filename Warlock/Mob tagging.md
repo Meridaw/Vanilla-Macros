@@ -1,4 +1,4 @@
-##Named mob tagging
+## Named mob tagging
 ```
 /script ClearTarget();
 /target Verog
@@ -7,7 +7,7 @@
 ```
  
 
-##Tagging closest mob
+## Tagging closest mob
 ```
 /script ClearTarget();
 /run TargetNearestEnemy()
