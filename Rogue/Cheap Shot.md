@@ -1,5 +1,6 @@
-Cheap Shot, clear target, target last target
-
+## Cheap Shot, clear target, target last target
+```
 /cast Cheap Shot
 /script ClearTarget();
 /script TargetLastTarget();
+```
