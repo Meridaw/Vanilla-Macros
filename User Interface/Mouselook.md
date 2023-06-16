@@ -1,9 +1,10 @@
-Start mouselook
-
+## Start mouselook
+```
 /run MouselookStart()
+```
 
 
-
-Stop mouselook
-
+## Stop mouselook
+```
 /run MouselookStop()
+```

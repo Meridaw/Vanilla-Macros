@@ -1,4 +1,4 @@
-Hide UIErrorsFrame
-
+## Hide UIErrorsFrame
+```
 /script UIErrorsFrame:Hide()
-
+```

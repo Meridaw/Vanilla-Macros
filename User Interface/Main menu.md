@@ -1,9 +1,10 @@
-Open the main menu
-
+## Open the main menu
+```
 /run ToggleGameMenu();
-
+```
  
 
-Keybind Esc to toggle the main menu
-
+## Keybind Esc to toggle the main menu
+```
 /run SetBinding("ESCAPE","TOGGLEGAMEMENU")SaveBindings(1)
+```
