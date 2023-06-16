@@ -1,9 +1,10 @@
-Scare Beast if combat, else Beast Lore
-
+## Scare Beast if combat, else Beast Lore
+```
 /script if UnitAffectingCombat("player") then CastSpellByName("Scare Beast") else CastSpellByName("Beast Lore") end
+```
 
 
-
-Mouseover Scare Beast
-
+## Mouseover Scare Beast
+```
 /run if UnitCanAttack("player", "mouseover") and UnitCreatureType("mouseover")=="Beast" then TargetUnit("mouseover") CastSpellByName("Scare Beast") TargetLastTarget() end; PetAttack()
+```

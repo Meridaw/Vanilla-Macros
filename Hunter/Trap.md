@@ -1,26 +1,27 @@
-Trap/Feign Death
-
+## Trap/Feign Death
+```
 /script if UnitAffectingCombat("player") then CastSpellByName("Feign Death") end
 /cast Freezing Trap
-
+```
  
 
-Pet on passive/follow/Trap/Feign Death
-
+## Pet on passive/follow/Trap/Feign Death
+```
 /script PetPassiveMode();
 /script PetFollow();
 /script if (UnitAffectingCombat("player")) then CastSpellByName("Feign Death") else if not (UnitAffectingCombat("player")) then CastSpellByName("Freezing Trap"); end
-
+```
  
 
-Feign Death/Trap/Put pet on passive
-
+## Feign Death/Trap/Put pet on passive
+```
 /cast Freezing Trap
 /script if UnitAffectingCombat("player") then CastSpellByName("Feign Death") end
 /script if UnitExists("pettarget") and CheckInteractDistance("target", 3) and UnitIsUnit("target", "pettarget") then PetPassiveMode(); else end
-
+```
  
 
-Immolation trap if alt key, Explosive trap if shift key, else Frost trap
-
-/script if IsAltKeyDown() then CastSpellByName("Immolation Trap");elseif IsShiftKeyDown() then CastSpellByName("Explosive Trap"); else CastSpellByName("Frost Trap") end; 
+## Immolation trap if alt key, Explosive trap if shift key, else Frost trap
+```
+/script if IsAltKeyDown() then CastSpellByName("Immolation Trap");elseif IsShiftKeyDown() then CastSpellByName("Explosive Trap"); else CastSpellByName("Frost Trap") end;
+```
