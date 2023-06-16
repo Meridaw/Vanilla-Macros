@@ -1,4 +1,4 @@
-Start attack, Hamstring (put auto attack on action slot 36)
+## Start attack, Hamstring (put auto attack on action slot 36)
 ```
 /cast Hamstring
 /script if not IsCurrentAction(36) then UseAction(36) end;
@@ -6,7 +6,7 @@ Start attack, Hamstring (put auto attack on action slot 36)
 ```
 
 
-Battle Stance, Charg﻿e or Hamstring i﻿f﻿ in melee ra﻿nge of the targe﻿t (put auto attack on action slot 36)
+## Battle Stance, Charg﻿e or Hamstring i﻿f﻿ in melee ra﻿nge of the targe﻿t (put auto attack on action slot 36)
 ```
 /script texture,name,isActive,isCastable = GetShapeshiftFormInfo(1); if isActive then CastSpellByName("Charge"); else CastSpellByName("Battle Stance"); end;
 /script if not IsCurrentAction(36) then UseAction(36) end;

@@ -1,4 +1,4 @@
-Berserker Rage:
+## Berserker Rage:
 ```
 /script texture,name,isActive,isCastable = GetShapeshiftFormInfo(3); if isActive then CastSpellByName("Berserker Rage"); else CastSpellByName("Berserker Stance"); end;
 ```
@@ -6,7 +6,7 @@ What this macro does, is that it change your current stance to Berserker Stance 
 
  
 
-Charge:
+## Charge:
 ```
 /script texture,name,isActive,isCastable = GetShapeshiftFormInfo(1); if isActive then CastSpellByName("Charge(Rank 3)"); else CastSpellByName("Battle Stance"); end;
 /script if not IsCurrentAction(36) then UseAction(36) end;
@@ -16,7 +16,7 @@ Also the last line will make you start attacking instantly while you are chargin
 
  
 
-Disarm:
+## Disarm:
 ```
 /script texture,name,isActive,isCastable = GetShapeshiftFormInfo(2); if isActive then CastSpellByName("Disarm"); else CastSpellByName("Defensive Stance"); end;
 ```
@@ -24,7 +24,7 @@ This will change your stance to Defensive Stance, regardless of which stance you
 
  
 
-Overpower:
+## Overpower:
 ```
 /script texture,name,isActive,isCastable = GetShapeshiftFormInfo(1); if isActive then CastSpellByName("Overpower(Rank 4)"); else CastSpellByName("Battle Stance"); end;
 ```
@@ -32,7 +32,7 @@ This will change your stance to Battle Stance regardless of which stance you are
 
  
 
-Pummel:
+## Pummel:
 ```
 /script texture,name,isActive,isCastable = GetShapeshiftFormInfo(3); if isActive then CastSpellByName("Pummel(Rank 2)"); else CastSpellByName("Berserker Stance"); end;
 ```
@@ -40,7 +40,7 @@ This will change your stance to Berserker Stance regardless of which stance you 
 
  
 
-Recklessness:
+## Recklessness:
 ```
 /script texture,name,isActive,isCastable = GetShapeshiftFormInfo(3); if isActive then CastSpellByName("Recklessness"); else CastSpellByName("Berserker Stance"); end;
 ```
