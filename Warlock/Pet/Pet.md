@@ -1,34 +1,34 @@
-#Pet bar macro (the skills are 1,2,3,4,5 from left to right)
+##Pet bar macro (the skills are 1,2,3,4,5 from left to right)
 ```
 /script CastPetAction(5);
 ```
  
 
-#Pet attack
+##Pet attack
 ```
 /script PetAttack()
 ```
  
 
-#Passive pet
+##Passive pet
 ```
 /script PetPassiveMode();
 ```
  
 
-#Pet follow
+##Pet follow
 ```
 /script PetFollow();
 ```
  
 
-#Toggle Autocast (the skills are 1,2,3,4,5 from left to right)
+##Toggle Autocast (the skills are 1,2,3,4,5 from left to right)
 ```
 /script TogglePetAutocast(5)
 ```
  
 
-#Rename demon
+##Rename demon
 ```
 /script PetAbandon();
 ```
