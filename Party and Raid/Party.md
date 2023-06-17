@@ -1,15 +1,16 @@
-Leave Party
-
+## Leave Party
+```
 /run LeaveParty()
-
+```
  
 
-Invite target to party
-
+## Invite target to party
+```
 /run InviteToParty("target")
-
+```
  
 
-Accept group invite
-
-/run AcceptGroup() 
+## Accept group invite
+```
+/run AcceptGroup()
+```

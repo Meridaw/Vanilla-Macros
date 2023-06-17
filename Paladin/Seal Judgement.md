@@ -1,39 +1,41 @@
-Seal of Righteousness + Judgement
-
+## Seal of Righteousness + Judgement
+```
 /run local z=0 for i=1,27 do t=UnitBuff("player",i) if (t and strfind(t,"ThunderBolt")) then z=1 break end end if z==1 then CastSpellByName("Judgement") else CastSpellByName("Seal of Righteousness") end 
-
+```
  
 
+## Seal of the Crusader and Seal of Righteousness
 This one checks for both Seal of the Crusader and Seal of Righteousness and only recasts Seal of Righteousness if none of them are active. This helps a lot when tanking.
-
+```
 /run c=CastSpellByName j="Judgement" q="y_ThunderB" r="y_HolyS" function b(k)for i=1,32 do if strfind(tostring(UnitBuff("player",i)),k)then return 1 end end end if b(r)or b(q) then c(j)end if not b(q) and not b(r)then c("Seal of Righteousness")end
-
+```
  
 
-Seal of Wisdom + Judgement
-
+## Seal of Wisdom + Judgement
+```
 /run c=CastSpellByName j="Judgement" q="y_Righteou" function b(k)for i=1,32 do if strfind(tostring(UnitBuff("player",i)),k)then return 1 end end end if not b(q) then c("Seal of Wisdom")else c(j) end
-
+```
  
 
-Seal of the Crusader + Judgement
-
+## Seal of the Crusader + Judgement
+```
 /run c=CastSpellByName j="Judgement" q="y_HolySmite" function b(k)for i=1,32 do if strfind(tostring(UnitBuff("player",i)),k)then return 1 end end end if not b(q) then c("Seal of the Crusader")else c(j) end
-
+```
  
 
-Seal of Light + Judgement
-
+## Seal of Light + Judgement
+```
 /run local i,x=1,0 while UnitBuff("player",i) do if UnitBuff("player",i)=="Interface\\Icons\\Spell_Holy_HealingAura" then x=1 end i=i+1 end if x==0 then CastSpellByName("Seal of Light") else CastSpellByName("Judgement")end
+```
 
 
-
-Seal of Justice + Judgement
-
+## Seal of Justice + Judgement
+```
 /run c=CastSpellByName j="Judgement" q="y_SealOfWrath" function b(k)for i=1,32 do if strfind(tostring(UnitBuff("player",i)),k)then return 1 end end end if not b(q) then c("Seal of Justice")else c(j) end
-
+```
  
 
-Seal of Command
-
-/run local i,x=1,0 while UnitBuff("player",i) do if UnitBuff("player",i)=="Interface\\Icons\\Ability_Warrior_InnerRage" then x=1 end i=i+1 end if x==0 then CastSpellByName("Seal of Command") else CastSpellByName("Judgement")end 
+## Seal of Command
+```
+/run local i,x=1,0 while UnitBuff("player",i) do if UnitBuff("player",i)=="Interface\\Icons\\Ability_Warrior_InnerRage" then x=1 end i=i+1 end if x==0 then CastSpellByName("Seal of Command") else CastSpellByName("Judgement")end
+``` 
