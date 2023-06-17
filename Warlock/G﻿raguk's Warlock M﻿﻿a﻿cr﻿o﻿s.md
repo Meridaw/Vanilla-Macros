@@ -15,7 +15,8 @@
 /script z=0;for i=1,16 do GameTooltipTextLeft1:SetText(nil);GameTooltip:SetUnitDebuff("target",i);if GameTooltipTextLeft1:GetText()=="Siphon Life" then z=1;end;end;if z==1 then TargetNearestEnemy();else CastSpellByName("Siphon Life");end
 ```
 
-## ToEP and Shadow Bolt macro (using Astryl's method so it doesn't require 2 presses of the button) - it will only activate if your target's health is above 30%, *or* it's a player. It assumes the lower trinket slot - use Trinket0Slot if you have it in the upper slot:
+## ToEP and Shadow Bolt macro 
+using Astryl's method so it doesn't require 2 presses of the button - it will only activate if your target's health is above 30%, *or* it's a player. It assumes the lower trinket slot - use Trinket0Slot if you have it in the upper slot:
 ```
 /script local a=GetInventorySlotInfo("Trinket1Slot");local b,c=GetInventoryItemCooldown("player",a);if c <= 0 and (UnitHealth("target") > 30 or UnitIsPlayer("target")) then UseInventoryItem(a);SpellStopCasting();end CastSpellByName("Shadow Bolt(rank 9)");
 ```
