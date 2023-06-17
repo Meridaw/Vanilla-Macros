@@ -1,4 +1,4 @@
-##In the inventory, the slots are numbered like this:
+## In the inventory, the slots are numbered like this:
 
 **1_______10**<br/>
 **2_______6**<br/>
