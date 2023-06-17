@@ -1,9 +1,9 @@
-Drink from a Flask
-
+## Drink from a Flask
+```
 /e produces a battered silver flask.
 /run ToggleSheath()
 /drink
-
+```
 
 This macro will make your character do the drink animation with a little more flavor. 
 The second line toggles weapon sheathing, but this never occurs due to the animation being canceled by the drink command. 
