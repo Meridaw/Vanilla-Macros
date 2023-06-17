@@ -45,7 +45,6 @@ You can use "% t" in your Macros to automatically insert the selected monster, c
 
 / cast allows you to cast spells by name. Type "/ cast (spell name)" - Example "/ cast Fireball (Rank 1)". To use this command in macros, you can type it in "pens", or click on a spell holding Shift in the spell book to automatically add the corresponding command to the macro.
 
-2
 
 ## Basics:
 Macros in the Islands are written in the Lua language (www.lua.org). Lua is a small and fast, but powerful enough language written in C. Therefore, knowing at least the basics of C? You can easily understand this simple task - writing macros for Islands.
@@ -63,26 +62,31 @@ Well, now let's say we are a magician, who played a magician - he knows what a m
 ```
 (X is your spell level)
 Go ahead. We need a script that treated and warned the rest of the healers that you are already curing this goal:
-Code:
 
+```
 / script if ((UnitName ("target") ~ = nil) AND (UnitIsFriend ("player", "target"))
 then SendChatMessage ("Healing (+ n)!", "PARTY", "COMMON", UnitName ("target")); end
 / cast SpellName (Rank X)
+```
 I think it is clear, the description of the function, see below.
-Another useful macro:
-Code:
 
+
+## Another useful macro:
+```
 / script ToggleBag (0);
 / script ToggleBag (1);
 / script ToggleBag (2);
 / script ToggleBag (3);
 / script ToggleBag (4);
+```
 Opens / closes all bags. It is useful to bind to "b".
 
-I will give the main functions:
+
+## I will give the main functions:
 Although these are all functions, some of them are only informational, and some directly affect the game, so I divided everything into methods and properties for convenience.
-[Methods]
-[actions]
+
+
+## [actions]
 AttackTarget ();
 Example: AttackTarget ();
 Description: Attacks the selected character.
@@ -123,7 +127,8 @@ ToggleBag (bagnumber)
 Example: ToggleBag (0);
 Description: Opens / closes bag bags located: 4-3-2-1-0. 0 is a backpack.
 
-[group and interaction]
+
+## [group and interaction]
 InviteByName (target)
 Example: InviteByName (GetSlashCmdTarget (msg));
 Description: Invites a character to a group with the name specified in the parameter.
@@ -180,7 +185,8 @@ LootSlot (slotidnumber, 0)
 Example: LootSlot (((LOOTFRAME_NUMBUTTONS - 1) * (LootFrame.page - 1)) + this: GetID (), 0);
 Description: Lost item
 
-[Movement]
+
+## [Movement]
 MoveForwardStart (starttime);
 Description: The player begins to run forward.
 
@@ -224,7 +230,8 @@ Description: Makes a player jump.
 SitOrStand ()
 Description: Makes sit down / stand up
 
-[guild]
+
+## [guild]
 AcceptGuild ()
 Description: Accepts an invitation to the guild.
 
@@ -252,7 +259,7 @@ Description: Sets the welcome message.
 GuildLeave ()
 Description: Leave the guild.
 
-[Pat]
+## [Pet]
 PetAttack ();
 Description: Makes your pet attack.
 PetAbandon ();
@@ -276,7 +283,8 @@ Description: Stops your pet in passive mode.
 PetFollow ()
 Description: Makes your pet follow you.
 
-[different]
+
+## [different]
 SendChatMessage (msg, mode, language, channel);
 Example: SendChatMessage (msg, "WHISPER", this.language, lastTell);
 Description: Sends message mode: "SAY", "YELL", "PARTY", "AFK", "DND", language: "COMMON", "DRACONIC", "ORCISH" ...
@@ -301,8 +309,8 @@ Description: Disconnect.
 Quit ()
 Description: Exit the game
 
-12/25/2004 03:22 _Lexx_ added:
-[Properties]
+
+## [Properties]
 UnitName (string)
 Example: target = UnitName ("target");
 Description: Returns Player Name
@@ -369,7 +377,8 @@ GetCorpseMapPosition ();
 Example: corpseX, corpseY = GetCorpseMapPosition ();
 Description: Returns the coordinates of your body.
 
-[chanel]
+
+## [chanel]
 LeaveChannelByName (channelname)
 LeaveChannelByName ("Trade");
 Leaves the channel with the specified name.
