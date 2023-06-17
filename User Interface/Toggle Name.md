@@ -7,7 +7,7 @@
 ## Toggle on / off NPC names
 ```
 /run if ( GetCVar("UnitNameNPC") == "1" ) then SetCVar("UnitNameNPC",0) else SetCVar("UnitNameNPC",1) end
-
+```
 
 
 ## Toggle NPC names
