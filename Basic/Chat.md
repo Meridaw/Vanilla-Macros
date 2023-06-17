@@ -1,3 +1,4 @@
+```
 /say message - Sends a message to people around you. (/ s)
 /whisper name message - Sends a private message. (/ w)
 /yell message - Sends a general message. (/ y)
@@ -11,4 +12,5 @@
 /afk [message] - Switches to "away from keyboard" mode.
 /dnd [message] - Switches to "do not disturb" mode.
 /join channel - Join / create a chat channel.
-/leave channel — Disconnects from the chat channel. 
+/leave channel — Disconnects from the chat channel.
+```

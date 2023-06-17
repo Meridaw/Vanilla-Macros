@@ -1,3 +1,4 @@
+```
 UI ActionButtonDown (id) - Press the specified action button.
 UI ActionButtonUp (id) - Release the specified action button.
 ActionHasRange (slot) - this is a range restriction (1 if yes, nil if no)
@@ -28,12 +29,12 @@ SetActionBarToggles (show1, show2, show3, show4) - Set show toggle for each acti
 PROTECTED TurnOrActionStart () - Begin "Right Click" in the 3D world. (1.10 - Protected)
 PROTECTED TurnOrActionStop () - End "Right Click" in the 3D world. (1.10 - Protected)
 UseAction (slot [, checkCursor [, onSelf]]) - this is the guideline.
+```
 
 
-
-Activity Functions
+## Activity Functions
 And it is easy to do this;
-
+```
 AcceptDuel () - The player accepts the challenge to duel.
 AttackTarget () - Attacks the targetted unit.
 CancelDuel () - Refuse the duel.
@@ -56,10 +57,11 @@ StartDuelUnit ("unit") - Challenge a unit to a duel.
 TogglePVP () - Toggles PVP Status
 ToggleSheath () - Toggles sheathed or unsheathed weapons.
 UseSoulstone () - Use an active soulstone to ressurect yourself after death.
+```
 
 
-
-AddOn Functions
+## AddOn Functions
+```
 DisableAddOn (index or "AddOnName") - Disable the specified AddOn for subsequent sessions.
 DisableAllAddOns () - Disable all AddOns for subsequent sessions.
 EnableAddOn (index or "AddOnName") - Enable the specified AddOnName for subsequent sessions.
@@ -72,10 +74,11 @@ IsAddOnLoaded (index or "AddOnName") - Returns true if the specified AddOn is lo
 IsAddOnLoadOnDemand (index or "AddOnName") - Test whether an AddOn is load-on-demand.
 LoadAddOn (index or "AddOnName") - Request loading of a Load-On-Demand AddOn.
 ResetDisabledAddOns () -
+```
 
 
-
-Auction Functions
+## Auction Functions
+```
 If you’re looking at the specified amount of time (minutes).
 CanSendAuctionQuery () - Return 1 if auction search button would be active, nil otherwise.
 CancelAuction (index) - Cancel the specified auction (on the "owner" list).
@@ -100,17 +103,21 @@ SetSelectedAuctionItem ("type", index) -?.
 SortAuctionItems ("type", "sort") - sorted by a specific column.
 StartAuction (minBid, buyoutPrice, runTime) - Starts the auction.
 UI AuctionFrameAuctions.duration - Set the amount of time for the auction.
+```
 
 
-
-Bank Functions
+## Bank Functions
+```
 BankButtonIDToInvSlotID (buttonID) - Returns the number of a bank button in terms of inventory slot ID.
 CloseBankFrame () - Close the bank frame if it's open. --Ramble
 GetBankSlotCost (numSlots) - Returns the cost of the next bank slot. --Ramble
 GetNumBankSlots () - Returns total banknotes
 PurchaseSlot () - Buys another bank slot if available ..
+```
 
-Battlefield Functions
+
+## Battlefield Functions
+```
 AcceptAreaSpiritHeal () - Accept a spirit heal.
 CancelAreaSpiritHeal () - Cancel a spirit heal.
 CanJoinBattlefieldAsGroup () - Returns a group for a battlefield.
@@ -149,12 +156,12 @@ SetBattlefieldScoreFaction ([faction]) - Set the faction to score on the battlef
 SetSelectedBattlefield (index) - it becomes available.
 ShowBattlefieldList (index) - Displays a queue window for the specified battlefield. Only works if you are already in a queue for the battlefield. Index match to queue array.
 ToggleBattlefieldMinimap () - Toggles the Battlefield Minimap.
+```
 
 
-
-Buff / Debuff Functions
+## Buff / Debuff Functions
 Don't get buffId and buffIndex confused, they aren't the same thing!
-
+```
 CancelPlayerBuff (buffIndex) - Removes a specific buff from the player.
 CancelTrackingBuff () - Find Minerals etc.
 GetPlayerBuff (buffId, buffFilter) - Retrieves info about a certain effect (beneficial, beneficial or passive)
@@ -165,12 +172,12 @@ GetPlayerBuffTimeLeft (buffIndex) - Retrieves how long a buff will last before e
 GetWeaponEnchantInfo () - enchantments.
 UnitBuff ("unit", index [, showCastable]) - Retrieves information about a certain unit.
 UnitDebuff ("unit", index [, showDispellable]) - Retrieves info about a certain unit.
+```
 
 
-
-Camera Functions
+## Camera Functions
 Mouse button refers to the movement direction. Button is not covered by these APIs.
-
+```
 PROTECTED CameraOrSelectOrMoveStart () - Begin "Left Click" in the 3D world. (1.10 - Protected)
 PROTECTED CameraOrSelectOrMoveStop ([stickyFlag]) - End "Left click" in the 3D world. (1.10 - Protected)
 CameraZoomIn (increment) - Zooms the camera into the viewplane by increment.
@@ -200,12 +207,12 @@ PrevView () - Cycles backward through the five predefined camera positions.
 ResetView (index) - Resets the specified (1-5) predefined camera (Save) (index).
 SaveView (index) - Replaces the specified (1-5) predefined camera positions with the current camera position.
 SetView (index) - Sets camera position to a specified (1-5) predefined camera position.
+```
 
 
-
-Channel Functions
+## Channel Functions
 These are the chat functions that are specific to channels. Also see the Chat Window Functions and Communication Functions sections.
-
+```
 AddChatWindowChannel (chatFrameIndex, "channel") - ChatFrame.
 ChannelBan ("channel", "name") - Bans a player from the specified channel.
 ChannelInvite ("channel", "name") - Invites the user to the channel.
@@ -230,10 +237,11 @@ RemoveChatWindowChannel (chatFrameIndex, "channel") - for a specific ChatFrame.
 SendChatMessage ("text" [, "type" [, language [, targetPlayer, ...]]]) - Sends a chat message.
 SetChannelOwner ("channel", "name") - Sets the channel owner.
 SetChannelPassword ("channel", "password") - Changes the password of the current channel.
+```
 
 
-
-Character Functions
+## Character Functions
+```
 AbandonSkill (index) - The player abandons a skill.
 AcceptResurrect () - him / herself.
 AcceptSkillUps ()
@@ -266,12 +274,12 @@ ResurrectHasSickness () - appears to be used when it comes to ressurection sickn
 ResurrectHasTimer () - accepting a ressurection
 RetrieveCorpse () - Resurrects when near corpse. eg, The "Accept" button sees you after running back to your body.
 SetSelectedSkill (index)
+```
 
 
-
-Chat Window Functions
+## Chat Window Functions
 Chat window management. Also see the Channel Functions and Communication Functions sections. (> Mikk's spiel on chat windows)
-
+```
 AddChatWindowChannel (chatFrameIndex, "channel") - ChatFrame.
 AddChatWindowMessages - Adds a messaging group to the specified chat window.
 ChangeChatColor (chatType, r, g, b) - Update the color for a type of chat message.
@@ -293,12 +301,12 @@ SetChatWindowLocked (index, locked) - Sets ChatFrame <index>.
 SetChatWindowName (index, "name") - Sets the name of the ChatFrame <index> to <"name">.
 SetChatWindowShown (index, shown) - Shows or Hides ChatFrame <index>
 SetChatWindowSize (index, size) - Sets the font size of a chat window.
+```
 
 
-
-Communication Functions
+## Communication Functions
 With other players. Also see the Channel Functions sections.
-
+```
 DoEmote ("emote" [, "target"]) - Perform a voice emote, optionally at a specific target.
 GetDefaultLanguage ("unit") - Returns.
 GetLanguageByIndex (index) - Returns the language specified by the index.
@@ -306,12 +314,12 @@ GetNumLaguages ​​() - I guess Blizzard's programmers mistyped that function 
 RandomRoll (low, high) - Does a random roll between the two values.
 SendAddonMessage ("prefix", "text", "PARTY | RAID | GUILD | BATTLEGROUND") - Sends a message to hidden AddOn channels. (new with patch 1.12)
 SendChatMessage ("text" [, "type" [, language [, targetPlayer, ...]]]) - Sends a chat message.
+```
 
 
-
-Container / Bag Functions
+## Container / Bag Functions
 These functions manage containers (bags, backpack). See also Inventory Functions and Bank Functions.
-
+```
 ContainerIDToInventoryID (bagID)
 GetBagName (bagID) - Get your name.
 GetContainerItemCooldown (bagID, slot)
@@ -329,12 +337,12 @@ SplitContainerItem (bagID, slot, amount)
 UI ToggleBackpack () - Toggles your backpack open / closed.
 UI ToggleBag (bagID) - Opens or closes the specified bag.
 UseContainerItem (bagID, slot) - Uses an item located in bag # and slot #. (Warning: If a vendor window is open, you can sell them!)
+```
 
 
-
-Crafting Functions
+## Crafting Functions
 Except for the trainers-train-pet-window training. Most functions only if the window has been opened. You can check whether it’s opened using GetCraftSkillLine ().
-
+```
 CloseCraft ()
 CollapseCraftSkillLine (index)
 DoCraft (index)
@@ -354,10 +362,11 @@ GetCraftSkillLine ()
 GetCraftSpellFocus (index) -?.
 GetNumCrafts ()
 SelectCraft (index)
+```
 
 
-
-Cursor Functions
+## Cursor Functions
+```
 AutoEquipCursorItem () -
 CursorCanGoInSlot (invSlot) - Return true if the cursor is
 CursorHasItem () - Returns true if the cursor is currently holding an item
@@ -392,45 +401,48 @@ ShowInspectCursor ()
 ShowInventorySellCursor () -?
 ShowMerchantSellCursor (index) - Changes the cursor to the merchant sell cursor.
 ShowRepairCursor ()
+```
 
 
-
-Debugging Functions
+## Debugging Functions
+```
 debugprofilestart () - starts a timer for profiling during debugging.
 debugprofilestop () - return the time in milliseconds since the last call to debugprofilestart ()
 FrameXML_Debug (flag) - Sets FrameXML logging state which is output to / WoW Folder / Logs / FrameXML.log
 GetDebugStats ()
 debugstack (start, count1, count2) -
+```
 
 
-
-Disabled Functions
+## Disabled Functions
 These functions are but have been disabled entirely.
-
+```
 AppendToFile -?
 DeleteFile () -?
 ReadFile () -?
+```
 
 
-
-Dressing Room Functions
+## Dressing Room Functions
 Functions Controling the Dressing Room interface. NEW in 1700.
-
+```
 UI DressUpItem ("item") - - This item will show the DressUp UI with the item equiped.
 UI DressUpItemLink ("itemlink") - Show an DressingRoom UI with the item equiped.
 UI SetDressUpBackground (isAuctionFrame) - Shows DressingRoom UI with the item equiped.
+```
 
 
-
-Enchanting Functions
+## Enchanting Functions
+```
 GetWeaponEnchantInfo () - enchantments.
 ReplaceEnchant ()
 ReplaceTradeEnchant () - Confirm the replacement of an enchantment via trade.
 BindEnchant () - Confirm the binding of the item when enchanting.
+```
 
 
-
-Faction Functions
+## Faction Functions
+```
 CollapseFactionHeader (index) - Collapse a faction header row.
 ExpandFactionHeader (index) - Expand a faction header row.
 FactionToggleAtWar (index) - Toggle the At War flag for a faction.
@@ -444,10 +456,11 @@ SetFactionInactive (index) - Move a faction to inactive group. (New in 1.10)
 SetSelectedFaction (index) - Sets the currently selected faction in reputation window. (New in 1.10)
 SetWatchedFactionIndex (index) - Sets which faction should be watched in the Blizzard reputation bar. (New in 1.10)
 UnitFactionGroup ("unit") - Returns the group id. (eg. "Alliance") - string returned is localization-independent (used in filepath)
+```
 
 
-
-Frame Management
+## Frame Management
+```
 CreateFrame ("frameType" [, "name"] [, parent] [, "inheritFrame"]) - Create a new frame of the specified type
 CreateFont ("name") - Dynamically create a font object
 GetNumFrames () - Get the current number of Frame (and derivative) objects
@@ -457,10 +470,11 @@ UI MouseIsOver - Determines whether or not the mouse is over the specified frame
 UI ToggleDropDownMenu (level, value, dropDownFrame, anchorName, xOffset, yOffset)
 UI UIFrameFadeIn (...)
 UI UIFrameFlash (...)
+```
 
 
-
-Friend Functions
+## Friend Functions
+```
 AddFriend ("playerName") - Add a friend to your friend list.
 GetFriendInfo (index) - Returns the name of the friend.
 GetNumFriends () - Returns how many friends are your friend list.
@@ -469,10 +483,11 @@ RemoveFriend ("name" or index) - Removes a friend from your friend list
 SetSelectedFriend (index) - Update the current selected friend.
 ShowFriends () - Request updated friends information from server.
 UI ToggleFriendsFrame ([tabNumber]) - it is possible (possibly on a specific tab).
+```
 
 
-
-GM Functions
+## GM Functions
+```
 DeleteGMTicket ()
 GMRequestPlayerInfo () - access denied (darn)
 GetGMStatus ()
@@ -494,12 +509,12 @@ GetGossipText () - Retrieves the gossip text.
 SelectGossipActiveQuest (index) - Selects an active quest.
 SelectGossipAvailableQuest (index) - Selects an available quest.
 SelectGossipOption (index) - Selects on a gossip item.
+```
 
 
-
-Group Functions
+## Group Functions
 See also: Raid Functions
-
+```
 AcceptGroup () - Accept the invitation to party.
 CheckReadyCheckTime () - Unknown, called from UIParent's OnUpdate!
 ConfirmReadyCheck (isReady) - Indicate if you are ready or not.
@@ -526,10 +541,11 @@ UninviteByName("name") - Uninvites (kicks) the named player from the current gro
 UninviteFromParty("unit") - Kick a unit from the party if player is group leader.
 UnitInParty("unit") - Returns true if the unit is a member of your party.
 UnitIsPartyLeader("unit") - Returns true if the unit is the leader of its party.
+```
 
 
-
-Guild Functions
+## Guild Functions
+```
 AcceptGuild() - The player accepts the invitation to join a guild.
 BuyGuildCharter("guildName") - Purchases a guild charter for guildName.
 CanEditMOTD() - Returns true if you are allowed to edit the guild motd.
@@ -582,10 +598,11 @@ SetGuildRosterSelection(index) - Selects/deselects a guild member according curr
 SetGuildRosterShowOffline(enabled) - Sets/Resets the show offline members flag.
 SortGuildRoster("sort") - Sorts guildroster according "sort". Any unknown values sort on "name".
 TurnInGuildCharter() - ?.
+```
 
 
-
-Honor Functions
+## Honor Functions
+```
 GetInspectHonorData() - Return honor info for the inspected unit (if available).
 GetInspectPVPRankProgress() - Return rank progress for the inspected unit (if available). Ranges from 0 to 1.
 GetPVPLastWeekStats() - Get your PvP/Honor statistics for last week.
@@ -600,10 +617,11 @@ RequestInspectHonorData() - Request honor data for inspected unit.
 UnitIsCivilian("unit") - Returns true if the unit is a civilian NPC.
 UnitPVPName("unit") - Returns unit's name with PvP rank prefix (eg, "Corporal Allianceguy").
 UnitPVPRank("unit") - Get PvP rank information for requested unit.
+```
 
 
-
-Ignore Functions
+## Ignore Functions
+```
 AddIgnore("name") - Add a player to your ignore list.
 AddOrDelIgnore("name") - Toggles the ignore state of the specified name.
 DelIgnore("name") - Delete a player from your ignore list.
@@ -611,10 +629,11 @@ GetIgnoreName(index) - Get the name of the player on your ignore list at index.
 GetNumIgnores() - Get the number of players on your ignore list.
 GetSelectedIgnore()
 SetSelectedIgnore(index)
+```
 
 
-
-Inspection Functions
+## Inspection Functions
+```
 CheckInteractDistance("unit",distIndex)
 ClearInspectPlayer() - Reset inspect data once finished with it (Called on inspect window hide)
 GetInspectHonorData() - Return honor info for the inspected unit (if available).
@@ -623,10 +642,11 @@ HasInspectHonorData() - Determine if the inspected unit's honor data is availabl
 UI InspectUnit("unit") - Inspects the specified / selected "unit".
 NotifyInspect("unit")
 RequestInspectHonorData() - Request honor data for inspected unit.
+```
 
 
-
-Instance Functions
+## Instance Functions
+```
 CanShowResetInstances() - Determine if player can reset instances at the moment.
 GetBattlefieldInstanceExpiration() - Get shutdown timer for the battlefield instance.
 GetBattlefieldInstanceInfo(index) - Get the instance ID for a battlefield.
@@ -636,12 +656,12 @@ GetNumSavedInstances() - Gets the number of instances that the player is saved t
 GetSavedInstanceInfo(index) - Gets information about an instance that the player is saved to.
 IsInInstance() - Returns 1 if the player is in an instance.
 ResetInstances() - Confirm reset of instances.
+```
 
 
-
-Inventory Functions
+## Inventory Functions
 These functions manage your inventory, that is those items you have equipped. See also Container/Bag Functions and Bank Functions.
-
+```
 AutoEquipCursorItem() - Causes the equipment on the cursor to be equipped.
 BankButtonIDToInvSlotID - Returns the ID number of a bank button in terms of inventory slot ID.
 CancelPendingEquip(index) - This function is used to cancel a pending equip.
@@ -667,12 +687,12 @@ PickupInventoryItem(invSlot) - "Picks up" an item from the player's worn invento
 SetInventoryPortaitTexture - ?.
 UpdateInventoryAlertStatus()
 UseInventoryItem(invSlot) - Use an item in a specific inventory slot.
+```
 
 
-
-Item Functions
+## Item Functions
 These functions are those which operate on item links or item information directly. See also Container/Bag Functions and Inventory Functions.
-
+```
 GetAuctionItemLink("type", index) - Returns a link string for the specified auction item.
 GetContainerItemLink(bagID, slot) - Returns the item link of the item located in bag#, slot#.
 GetCraftItemLink(index)
@@ -689,12 +709,12 @@ GetTradeSkillReagentItemLink(index, reagentId) - Gets the link string for a trad
 GetTradeTargetItemLink(id) - Returns link to a trade item.
 OffhandHasWeapon() - Determine if your offhand carries a weapon.
 UI SetItemRef(link, text, button) - Handles item link tooltips in chat.
+```
 
 
-
-Item Text Functions
+## Item Text Functions
 These functions relate to item text (books, etc)
-
+```
 CloseItemText() - Close an open item text (book, plaque, etc).
 ItemTextGetCreator() - Get the creator of the current text (if player-created).
 ItemTextGetItem() - Get the name of the text.
@@ -704,10 +724,11 @@ ItemTextGetText() - Get the page contents of the currently viewed page.
 ItemTextHasNextPage() - Determine if there is another page after the current one.
 ItemTextNextPage() - Request the next page of the text.
 ItemTextPrevPage() - Request the previous page of the text.
+```
 
 
-
-Key Binding Functions
+##Key Binding Functions
+```
 GetBinding(index) - Get action and key bindings for that index.
 GetBindingAction("key") - Get the action bound to that key.
 GetBindingKey("command") - Get the key(s) bound to that action.
@@ -719,23 +740,24 @@ RunBinding("command"[, "up"]) - Executes the key binding named "command"
 SaveBindings(which) - Saves account or character specific key bindings from memory to disk.
 SetBinding("key"[, "command"]) - Sets or unsets key bindings.
 SetConsoleKey("key") - Sets the console key (normally "`").
+```
 
 
-
-Location Functions
+## Location Functions
 These functions are related to the current location of the player and how it is displayed.
 
 Globals associated with Location. Events associated with Location.
-
+```
 GetMinimapZoneText() - Returns the zone text, that is displayed over the minimap.
 GetRealZoneText() - Returns either instance name or zone name
 GetSubZoneText() - Returns the subzone text (eg "The Canals").
 GetZonePVPInfo() - Returns PVP info for the current zone.
 GetZoneText() - Returns the zone text (eg "Stormwind City").
+```
 
 
-
-Loot Functions
+## Loot Functions
+```
 CloseLoot([uiFailedFlag])
 ConfirmBindOnUse()
 ConfirmLootRoll(slot) - Confirm a loot roll (NEW IN 1300)
@@ -757,10 +779,11 @@ RollOnLoot(rollId[, roll]) - Roll or pass on a loot started by the game itself.
 SetLootMethod("method"[, "masterPlayer" or threshold]) - Set the current loot method
 SetLootPortrait()
 SetLootThreshold(threshold) - Set the threshold for group/master loot
+```
 
 
-
-Macro Functions
+## Macro Functions
+```
 CreateMacro("name", icon, "body", local) - Create a new macro.
 DeleteMacro(index) - Deletes a macro.
 EditMacro(index, "name", iconIndex, "body", local) - Saves a macro.
@@ -770,12 +793,12 @@ GetMacroInfo(index) - Returns "name", iconTextureID, "body", local.
 GetNumMacroIcons() - Returns the number of usable icons provided by Blizzard.
 GetNumMacros() - Returns the number of macros the user has.
 PickupMacro(index) - Pickup a macro button icon.
+```
 
 
-
-Mail Functions
+## Mail Functions
 Globals associated with Mail. Events associated with Mail.
-
+```
 CheckInbox() - Populate client's inbox with mail from server.
 ClearSendMail() - This clears the text in the send mail tab and places the COD item in the inventory. --Bug 15:52, 6 Feb 2005 (EST)
 ClickSendMailItemButton() - This seems to just simulate a click on the send item mail slot (will pickup the item there). --Bug 18:59, 4 Feb 2005 (EST)
@@ -808,12 +831,12 @@ SetSendMailMoney(amount) - Add money to next mail sent using SendMail(). --Drund
 TakeInboxItem(index) - Take the attached item from the mailbox message at index.
 TakeInboxMoney(index) - Take the attached money from the mailbox message at index. --Drundia 21:30, 25 April 2006 (EDT)
 TakeInboxTextItem(index) - Creates a permanent copy of letter (readable "Plain Letter") --Drundia 21:30, 25 April 2006 (EDT).
+```
 
 
-
-Mapping Functions
+## Mapping Functions
 These functions are related to display of the world map.
-
+```
 GetCorpseMapPosition() - Returns the position of the corpse on the current world map.
 GetCurrentMapContinent() - Returns the number of the continent the world map is currently showing.
 GetCurrentMapZone() - Returns the number of the zone the world map is currently showing.
@@ -838,17 +861,19 @@ CreateWorldMapArrowFrame("frame") - create a arrow cursor for the player positio
 UpdateWorldMapArrowFrames() - update the orientation of the arrow cursor based on the current player orientation.
 ShowWorldMapArrowFrame(bool) - show or hide the arrow representing the player.
 PositionWorldMapArrowFrame(x,y) - set the position of the arrow representing the player
+```
 
 
-
-Meeting Stone Functions
+##Meeting Stone Functions
+```
 CancelMeetingStoneRequest() - Remove character from an instance's Meeting Stone queue
 GetMeetingStoneStatusText()
 IsInMeetingStoneQueue()
+```
 
 
-
-Merchant Functions
+## Merchant Functions
+```
 BuyMerchantItem(index[, qty]) - Buys an item from a merchant.
 BuybackItem(index) - Buys back a sold item.
 CanMerchantRepair() - Returns true if the merchant can repair items.
@@ -865,12 +890,12 @@ PickupMerchantItem(index) - Places the item on the cursor.
 RepairAllItems()
 ShowMerchantSellCursor(index) - Changes the cursor to the merchant sell cursor.
 ShowRepairCursor()
+```
 
 
-
-Movement Functions
+## Movement Functions
 Use with caution - movement started by a script must be stopped by script. Keys/Mouse will not stop movement. These functions no longer work (fail silently) in patch 1.6 if NOT triggered from a hardware event (just like spell casts). As of patch 1.10 many of these functions were protected for use of only Blizzard signed code.
-
+```
 PROTECTED CameraOrSelectOrMoveStart() - Begin "Left click" in the 3D world. (1.10 - Protected)
 PROTECTED CameraOrSelectOrMoveStop([stickyFlag]) - End "Left click" in the 3D world. (1.10 - Protected)
 FollowByName("name"[, exactMatch]) - Follow a player with the specified player name
@@ -893,10 +918,11 @@ PROTECTED TurnOrActionStart() - Begin "Right Click" in the 3D world. (1.10 - Pro
 PROTECTED TurnOrActionStop() - End "Right Click" in the 3D world. (1.10 - Protected)
 PROTECTED TurnRightStart - The player starts turning right at the specified time.
 PROTECTED TurnRightStop - The player stops turning right at the specified time.
+```
 
 
-
-Pet Functions
+## Pet Functions
+```
 BuyStableSlot()
 CastPetAction(index) - Cast the corresponding pet skill.
 CheckPetUntrainerDist() - Check wether the player is close enough to the pet untrainer.
@@ -944,10 +970,11 @@ TogglePetAutocast(index) - Toggles whether the specified pet ability should auto
 ToggleSpellAutocast(index, bookIndex) - Toggles whether the specified pet ability should autocast or not. (in the spellbook).
 GetSpellAutocast(index, bookIndex) - Check wether the specified pet ability autocasts or not.
 UnstablePet(index) - ?
+```
 
 
-
-Petition Functions
+## Petition Functions
+```
 CanSignPetition() - ?.
 ClosePetition() - ?.
 GetNumPetitionNames() - ?.
@@ -956,12 +983,12 @@ GetPetitionNameInfo(index) - ?.
 OfferPetition() - ?.
 RenamePetition("name") - ? - (NEW IN 1300)
 SignPetition() - ?.
+```
 
 
-
-Quest Functions
+## Quest Functions
 See also Gossip Functions
-
+```
 AbandonQuest - Abandon the specified quest.
 AcceptQuest - Accept the specified quest.
 AddQuestWatch(x) - Add a quest to the watch list.
@@ -1019,12 +1046,12 @@ RemoveQuestWatch(index) - Remove a quest watch (Is the index a quest or watch in
 SelectQuestLogEntry - ?.
 SetAbandonQuest - Called before AbandonQuest.
 UI ToggleQuestLog - Opens/closes the quest log.
+```
 
 
-
-Raid Functions
+## Raid Functions
 See also: Group Functions
-
+```
 ConvertToRaid() - Converts party to raid.
 DemoteAssistant("name") - Demotes player from assistant status. Requires raid leadership.
 GetNumRaidMembers() - Returns the number of raid members.
@@ -1072,3 +1099,4 @@ SetLayoutMode ()
 SetMultisampleFormat (index) - Set the multi-sample (antialias) format to use.
 SetScreenResolution (x)
 SetTerrainMip (
+```

@@ -1,4 +1,4 @@
-Creating a Macro
+## Creating a Macro
 
 Type / macro or click on the talk button and select Macro. A window will appear listing the macros. In the beginning, you will not have macros.
 Click the "new" button at the bottom of this window. Another window will appear in which you can enter a name for the new Macro and select an icon.
@@ -10,30 +10,36 @@ While the icon for your macro is highlighted, move the cursor to the "enter macr
 Enter "/ assist Nebu"
 Now, place the cursor over the sword icon (assist), then click on it with the LMB and hold it (LMB).
 Move the icon to an empty space in the action bar.
+
 To use your new macro, click the corresponding number button or right-click (RMB) on the macro icon in the shortcut bar.
 Now, you have a Macro with which you can help another player (Nebu) in attacking monsters. When Nebu enters a battle with someone, press the button of this Macro and your new target will be the subject that Nebu is fighting.
-Finishing Editing Macros
+
+## Finishing Editing Macros
 After you finish editing or creating Macros, click the cross in the upper right corner of the Macros window to close it.
-Editing Existing Macros
+
+## Editing Existing Macros
 Type / macro and then click on the macro icon you want to edit. You can now edit the selected Macro in the "Enter Macro Commands" input area. When you are done, click the cross located in the upper right corner of the Macros window to close it.
 
-Limitations of Macros
+## Limitations of Macros
 For each Macro there is a limit on the number of characters. If your Macro is too long, make it shorter (approx. Transl. - mdya ... and we will not guess before)!
 
-Macro Tips
+## Macro Tips
 Use any existing commands.
 
-Here are some other tips for using macros:
+## Here are some other tips for using macros:
 
 - repeating text that you do not want to enter again
 repetition messages for auctions
 -creation of funny messages
 -execution of a sequence of commands, for example:
-/ leave 1 / leave 2 (leave channels 1 and 2)
-/ join wowtraders (joins the wowtraders channel)
-/ g Hello everyone! (welcome everyone to your guild channel)
+```
+/leave 1 
+/leave 2 (leave channels 1 and 2)
+/join wowtraders (joins the wowtraders channel)
+/g Hello everyone! (welcome everyone to your guild channel)
+```
 
-Additional Information
+## Additional Information
 
 You can use "% t" in your Macros to automatically insert the selected monster, creature, player into your Macro. For example, the macro "/ say hi% t" will display "Hi Nebu" if you have currently selected the Nebu player.
 
@@ -41,18 +47,20 @@ You can use "% t" in your Macros to automatically insert the selected monster, c
 
 2
 
-Basics:
+## Basics:
 Macros in the Islands are written in the Lua language (www.lua.org). Lua is a small and fast, but powerful enough language written in C. Therefore, knowing at least the basics of C? You can easily understand this simple task - writing macros for Islands.
-Type in the chat / macros line - a list of macros will open, type the new button, then create a name, select a picture, then enter the code. Stop, and what actually enter? Well, let us think at all, why do we need all this, correctly, to automate our actions, and what they can be read in this topic. The first thing that comes to mind is to tell your group who to attack:
-Code:
-
-/ p Atacking% t
+Type in the chat / macros line - a list of macros will open, type the new button, then create a name, select a picture, then enter the code. Stop, and what actually enter? Well, let us think at all, why do we need all this, correctly, to automate our actions, and what they can be read in this topic. The first thing that comes to mind is to tell your group 
+## who to attack:
+```
+/p Atacking% t
+```
 (% t substitutes the name of the character you selected.)
 Well, now let's say we are a magician, who played a magician - he knows what a misfortune to cast polymorph in a group, when members of the group, by inconsistency, begin to attack and quite often they get a sheep.
-Code:
 
-/ p Polymorphing! DONT atack% t!
-/ cast Polymorph (Rank X)
+```
+/p Polymorphing! DONT atack% t!
+/cast Polymorph (Rank X)
+```
 (X is your spell level)
 Go ahead. We need a script that treated and warned the rest of the healers that you are already curing this goal:
 Code:
