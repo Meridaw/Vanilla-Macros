@@ -727,7 +727,7 @@ ItemTextPrevPage() - Request the previous page of the text.
 ```
 
 
-##Key Binding Functions
+## Key Binding Functions
 ```
 GetBinding(index) - Get action and key bindings for that index.
 GetBindingAction("key") - Get the action bound to that key.
