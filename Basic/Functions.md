@@ -864,7 +864,7 @@ PositionWorldMapArrowFrame(x,y) - set the position of the arrow representing the
 ```
 
 
-##Meeting Stone Functions
+## Meeting Stone Functions
 ```
 CancelMeetingStoneRequest() - Remove character from an instance's Meeting Stone queue
 GetMeetingStoneStatusText()
