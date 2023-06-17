@@ -1,4 +1,5 @@
-Stopcast/Silence
-
+## Stopcast/Silence
+```
 /script SpellStopCasting()
 /cast Silence
+```
