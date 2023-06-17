@@ -1,3 +1,4 @@
-Use helmet
-
-/run UseInventoryItem(1) 
+## Use helmet
+```
+/run UseInventoryItem(1)
+```
