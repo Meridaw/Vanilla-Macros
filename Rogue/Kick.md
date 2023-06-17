@@ -2,7 +2,7 @@
 ```
 /cast Kick
 /e Kicked %t
-
+```
  
 
 ## Simple kick macro
