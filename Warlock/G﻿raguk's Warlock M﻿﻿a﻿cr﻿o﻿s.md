@@ -21,7 +21,8 @@ using Astryl's method so it doesn't require 2 presses of the button - it will on
 /script local a=GetInventorySlotInfo("Trinket1Slot");local b,c=GetInventoryItemCooldown("player",a);if c <= 0 and (UnitHealth("target") > 30 or UnitIsPlayer("target")) then UseInventoryItem(a);SpellStopCasting();end CastSpellByName("Shadow Bolt(rank 9)");
 ```
 
-## Updated Amplify Curse if it's up (you need to use the "SCAN SPELLBOOK" macro to find the ID in *your* spellbook - change 16 to your ID), then immediately also cast the highest rank of Curse of Agony.
+## Amplify Curse and Curse of Agony macro
+Updated Amplify Curse if it's up (you need to use the "SCAN SPELLBOOK" macro to find the ID in *your* spellbook - change 16 to your ID), then immediately also cast the highest rank of Curse of Agony.
 ```
 /script local e, f, g = GetSpellCooldown(16, SpellBookFrame.bookType); if (f <= 0) then CastSpellByName("Amplify Curse"); SpellStopCasting();end; CastSpellByName("Curse of Agony");
 ```
