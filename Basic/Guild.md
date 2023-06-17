@@ -1,3 +1,4 @@
+```
 /ginfo - Displays information about your guild.
 /g message - Sends a message to members of your guild.
 /o message - Sends a message to your guild officers.
@@ -9,4 +10,5 @@
 /gquit - Leave the guild.
 /groster - guards roster (officers and leaders only)
 /gleader name - Change guild leader.
-/gdisband - Disbands your guild (guild leader only) 
+/gdisband - Disbands your guild (guild leader only)
+```
