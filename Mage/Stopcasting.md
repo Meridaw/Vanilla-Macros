@@ -1,18 +1,19 @@
-Immediate Counterspell
-
+## Immediate Counterspell
+```
 /script SpellStopCasting()
 /cast Counterspell
-
+```
  
 
-Immediate Blink
-
+## Immediate Blink
+```
 /script SpellStopCasting()
 /cast Blink
-
+```
  
 
-Immediate Polymorph
-
+## Immediate Polymorph
+```
 /script SpellStopCasting()
-/cast Polymorph(Rank 1) 
+/cast Polymorph(Rank 1)
+```
