@@ -1,20 +1,6 @@
-## Spammable Auto Attack Macro w/ Melee and Ranged swapping (put Shoot or Auto Shot into action slot 1)
-```
-/run if CheckInteractDistance("target", 3) and (not PlayerFrame.inCombat) then AttackTarget() elseif not IsAutoRepeatAction(1) then CastSpellByName("Auto Shot OR Shoot") end
-```
-Replace Auto Shot or Shoot with your classes ranged auto attack
-
- 
-
 ## Start Melee Attack
 ```
 /script if (not PlayerFrame.inCombat) then AttackTarget() end
-```
- 
-
-## Auto Shot
-```
-/script if not IsAutoRepeatAction(xx) then CastSpellByName("Auto Shot"); end
 ```
  
 
@@ -26,11 +12,12 @@ Replace Auto Shot or Shoot with your classes ranged auto attack
 
 ## Melee shoot
 ```
-/script local _,_,i=strfind(GetInventoryItemLink("player",18),"\124Hitem:(%d+)")local _,_,_,_,_,p=GetItemInfo(i)local t={}t.Bows="Bow"t.Guns="Gun"t.Crossbows="Crossbow"t.Thrown="Throw"CastSpellByName((string.gsub(t[p],"^([^T])","Shoot %1")))
+/run local _,_,i=strfind(GetInventoryItemLink("player",18),"\124Hitem:(%d+)")local _,_,_,_,_,p=GetItemInfo(i)local t={}t.Bows="Bow"t.Guns="Gun"t.Crossbows="Crossbow"t.Thrown="Throw"CastSpellByName((string.gsub(t[p],"^([^T])","Shoot %1")))
 ```
- 
 
-## Shoot (wand) Replace X with the Slot id of the skill on your hotbar 
+
+## Throw / Melee Attack
+Spammable Auto Attack Macro w/ Melee and Ranged swapping
 ```
-/script if not IsAutoRepeatAction(X) then CastSpellByName("Shoot"); end
+/run if CheckInteractDistance("target", 3) and (not PlayerFrame.inCombat) then AttackTarget() else CastSpellByName("Throw") end
 ```
