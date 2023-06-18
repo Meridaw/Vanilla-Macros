@@ -1,10 +1,9 @@
-## Spammable Auto Attack Macro w/ Melee and Ranged swapping (put Shoot or Auto Shot into action slot 1)
+## Spammable Auto Attack Macro w/ Melee and Ranged swapping 
+put Auto Shot into action slot 1 for the range attack to work in this macro
 ```
-/run if CheckInteractDistance("target", 3) and (not PlayerFrame.inCombat) then AttackTarget() elseif not IsAutoRepeatAction(1) then CastSpellByName("Auto Shot OR Shoot") end
+/run if CheckInteractDistance("target", 3) and (not PlayerFrame.inCombat) then AttackTarget() elseif not IsAutoRepeatAction(1) then CastSpellByName("Auto Shot") end
 ```
-Replace Auto Shot or Shoot with your classes ranged auto attack
 
- 
 
 ## Start Melee Attack
 ```
@@ -12,13 +11,14 @@ Replace Auto Shot or Shoot with your classes ranged auto attack
 ```
  
 
-## Auto Shot
+## Spammable Auto Shot
+put Auto Shot some place on the bars and replace xx with that slots id
 ```
 /script if not IsAutoRepeatAction(xx) then CastSpellByName("Auto Shot"); end
 ```
  
 
-## Auto attack
+## Spammable Auto attack
 ```
 /run for z=1,172 do if IsAttackAction(z)then if not IsCurrentAction(z)then UseAction(z);end;end;end;
 ```
