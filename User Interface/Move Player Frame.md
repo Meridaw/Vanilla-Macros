@@ -20,3 +20,11 @@
 ```
 /script TargetFrame:StopMovingOrSizing()TargetFrame:SetMovable()
 ```
+
+
+## Use these scripts to move player and target frame 
+Adjust the coordinates to your liking.
+```
+/run PlayerFrame:ClearAllPoints() PlayerFrame:SetPoint("CENTER",UIParent,-150,-150)PlayerFrame:SetUserPlaced(true)
+/run TargetFrame:ClearAllPoints() TargetFrame:SetPoint("CENTER",UIParent,150,-150)TargetFrame:SetUserPlaced(true)
+```
