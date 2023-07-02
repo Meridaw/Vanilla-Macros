@@ -38,3 +38,9 @@
 ```
 /run ld, hd, old, ohd, pb, nb, pm = UnitDamage("target"); SendChatMessage(UnitName("target").."'s main hand attacks hit for "..ld.." to "..hd.. " and their offhand attacks hit for "..old.." to "..ohd);
 ```
+
+
+## Target class
+```
+/run u=UnitClass y="target" a=u(y ,0) SendChatMessage(UnitName(y).." is a "..a..". ", SAY)
+```
