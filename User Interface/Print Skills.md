@@ -1,4 +1,4 @@
-Print skills
+## Print skills
 prints the name and id of all the skills in your spellbook
 ```
 /run local i=1;while true do local spellName,spellRank=GetSpellName(i,BOOKTYPE_SPELL);if not spellName then break;end;DEFAULT_CHAT_FRAME:AddMessage(i..": "..spellName..'('..spellRank..')');i=i+1;end
