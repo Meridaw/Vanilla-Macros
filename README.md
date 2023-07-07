@@ -14,8 +14,10 @@ click the green code button and select Download ZIP to download the files.
 
 ## References
 
-- [Complete list of every addon or macro function](http://wowwiki.wikia.com/index.php?title=World_of_Warcraft_API&oldid=281620)
+- [Complete list of every addon or macro function](https://wowpedia.fandom.com/wiki/World_of_Warcraft_API?oldid=255618)
 - [LUA tips, chat & raid macros](https://nirklars.wordpress.com/wow/vanilla-wow-lua-tips/)
+- [Lua Definitions](https://github.com/refaim/Vanilla-WoW-Lua-Definitions)
+- [Console Commands](https://docs.google.com/spreadsheets/d/17bXs9WhOkP8Zknl1GYXCFVdHYOdgxoRFrIe7Os3BtRo/edit#gid=0)
 - [Useful macros (1.0)](https://wowwiki-archive.fandom.com/wiki/Useful_macros_(1.0))
 - [Vanilla wow macros](https://nirklars.wordpress.com/wow/vanilla-wow-macros/)
 - [Most Used Macros](https://web.archive.org/web/20060813140631/http://www.wowwiki.com/Most_Used_Macros)
@@ -24,8 +26,6 @@ click the green code button and select Download ZIP to download the files.
 - [Macro per maghi](https://www.freeforumzone.com/discussione.aspx?idd=5581207)
 - [Priest addons and Macros](http://orderofsargeras.com/phpBB2_resto/viewtopic.php?t=14&sid=d4903119e59b7a30276b0df4e64b3aed)
 - [Graguk's Warlock Macros](http://blue.cardplace.com/cache/wow-warlock/905421.htm)
-- [Console Commands](https://docs.google.com/spreadsheets/d/17bXs9WhOkP8Zknl1GYXCFVdHYOdgxoRFrIe7Os3BtRo/edit#gid=0)
-- [Lua Wiki](https://vanilla-wow-archive.fandom.com/wiki/Lua)
 
 ---
 
