@@ -15,7 +15,7 @@ click the green code button and select Download ZIP to download the files.
 ## References
 
 - [Complete list of every addon or macro function](https://wowpedia.fandom.com/wiki/World_of_Warcraft_API?oldid=255618)
-- [LUA tips, chat & raid macros](https://nirklars.wordpress.com/wow/vanilla-wow-lua-tips/)
+- [Lua tips, chat & raid macros](https://nirklars.wordpress.com/wow/vanilla-wow-lua-tips/)
 - [Lua Definitions](https://github.com/refaim/Vanilla-WoW-Lua-Definitions)
 - [Console Commands](https://docs.google.com/spreadsheets/d/17bXs9WhOkP8Zknl1GYXCFVdHYOdgxoRFrIe7Os3BtRo/edit#gid=0)
 - [Useful macros (1.0)](https://wowwiki-archive.fandom.com/wiki/Useful_macros_(1.0))
