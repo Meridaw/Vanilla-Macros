@@ -2,3 +2,8 @@
 ```
 /run if n~= 1 then CastSpellByName("Pick Pocket") n=1 else CastSpellByName("Ambush") n=0 end;
 ```
+
+
+## Modifier key
+Uses Pick Pocket while Shift is being hold down, else Ambush.
+/run if (IsShiftKeyDown())then CastSpellByName("Pick Pocket") else CastSpellByName("Ambush") end
