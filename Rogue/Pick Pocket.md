@@ -6,4 +6,6 @@
 
 ## Modifier key
 Uses Pick Pocket while Shift is being hold down, else Ambush.
+```
 /run if (IsShiftKeyDown())then CastSpellByName("Pick Pocket") else CastSpellByName("Ambush") end
+```
