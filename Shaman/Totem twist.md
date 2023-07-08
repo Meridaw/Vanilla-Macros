@@ -11,7 +11,8 @@ uses Windfury and Grace of Air with a 10 second cooldown
 ```
 
 
-## Searing / Strength of Earth / Healing Stream
+## Grace of Air Totem, else Windfury Totem
+If you got Windfury on mainhand cast Grace of Air Totem, else Windfury Totem
 ```
-/run c=CastSpellByName if n==0 then c("Searing Totem") n=1 elseif n==1 then c("Strength of Earth Totem") n=2 else c("Healing Stream Totem") n=0 ;end
+/run hasMainHandEnchant = GetWeaponEnchantInfo() if  not hasMainHandEnchant then CastSpellByName("Windfury Totem")else CastSpellByName("Grace of Air Totem")end
 ```
