@@ -3,6 +3,14 @@
 /run local a=GetMouseFocus()message(ActionButton_GetPagedID(a))
 ```
 
+
+## Identify action slot number abilities are placed in and icon name
+This will print all the slot and texture names where abilities are placed
+```
+/run for i=1,72 do if GetActionTexture(i) then DEFAULT_CHAT_FRAME:AddMessage("Slot "..i..": "..GetActionTexture(i))end end
+```
+
+
 ## Here you can see where the actionID slots in your actionbars are:
 
 ActionBar page 1: slots 1 to 12<br/>
