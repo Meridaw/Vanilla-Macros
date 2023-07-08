@@ -18,6 +18,7 @@ click the green code button and select Download ZIP to download the files.
 - [Lua tips, chat & raid macros](https://nirklars.wordpress.com/wow/vanilla-wow-lua-tips/)
 - [Lua Definitions](https://github.com/refaim/Vanilla-WoW-Lua-Definitions)
 - [Console Commands](https://docs.google.com/spreadsheets/d/17bXs9WhOkP8Zknl1GYXCFVdHYOdgxoRFrIe7Os3BtRo/edit#gid=0)
+- [Queriable buff effects](https://wowwiki-archive.fandom.com/wiki/Queriable_buff_effects)
 - [Useful macros (1.0)](https://wowwiki-archive.fandom.com/wiki/Useful_macros_(1.0))
 - [Vanilla wow macros](https://nirklars.wordpress.com/wow/vanilla-wow-macros/)
 - [Most Used Macros](https://web.archive.org/web/20060813140631/http://www.wowwiki.com/Most_Used_Macros)
