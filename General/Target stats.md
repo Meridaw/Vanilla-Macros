@@ -44,3 +44,15 @@
 ```
 /run u=UnitClass y="target" a=u(y ,0) SendChatMessage(UnitName(y).." is a "..a..". ", SAY)
 ```
+
+
+## Target base armor and damage reduction
+```
+/run a=UnitResistance("target" , 0) pl=UnitLevel("player") br=(a/(a+400+85*pl)*100) print(string.format("Target Base Armor = ".. a)) print("Target Base Damage Reduction = ".. br .."%")
+```
+
+
+## Target damage reduction after 5 sunders
+```
+/run a=UnitResistance("target" , 0) pl=UnitLevel("player") br=(a/(a+400+85*pl)*100) sund=((a-2000)/(a+400+85*pl)*100) tot=(br-sund) print("Target Damage Reduction After 5 Sunders = ".. sund .."%") print("Total Reduction = ".. tot .."%")
+```
