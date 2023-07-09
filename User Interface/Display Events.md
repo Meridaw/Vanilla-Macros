@@ -20,5 +20,7 @@ hides the ongoing events in the chat frame
 
 
 ## Hide redundant Events
-this hides some of the redundant events 
+this hides some of the redundant events
+```
 /run EventUnregister = {"CHAT_MSG_ADDON", "CHAT_MSG_CHANNEL", "CHAT_MSG_CHANNEL_LEAVE", "CHAT_MSG_CHANNEL_JOIN", "CHAT_MSG_GUILD"} for i = 1, getn(EventUnregister) do f:UnregisterEvent(EventUnregister[i])end
+```
