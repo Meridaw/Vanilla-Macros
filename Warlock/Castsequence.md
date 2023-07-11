@@ -1,6 +1,6 @@
 ## Siphon Life, CoA, Corruption
 ```
-/run s={"Siphon Life","Curse of Agony","Corruption"} if not q then q=1 end CastSpellByName(s[q]) q=q+1if q>table.getn(s) then q=1 end
+/run s={"Siphon Life","Curse of Agony","Corruption"} if not q then q=1 end CastSpellByName(s[q]) q=q+1 if q>table.getn(s) then q=1 end
 ```
 
 
