@@ -17,7 +17,7 @@ replace IsAltKeyDown() with IsShiftKeyDown() or IsControlKeyDown() if you want t
 ```
  
 
-## Dispel Magic/Disease
+## Dispel Raid
 ```
-/run local s,p,i,d,t,_={["Magic"]="Dispel Magic",["Disease"]="Abolish Disease"};for i=1,40 do p="raid"..i;if CheckInteractDistance(p,4) then d,_,t=UnitDebuff(p,1,1);if d then TargetUnit(p);CastSpellByName(s[t]);TargetLastTarget();break;end;end;end
+/run local s,p,i,d,t,_={["Magic"]="Dispel Magic",["Disease"]="Abolish Disease"};for i=1,40 do p="raid"..i;if CheckInteractDistance(p,4) then d,_,t=UnitDebuff(p,1);if d then TargetUnit(p);CastSpellByName(s[t]);TargetLastTarget();break;end;end;end
 ```
