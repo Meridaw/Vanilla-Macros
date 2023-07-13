@@ -7,5 +7,5 @@ Slots in bags are numbered like this:<br/>
 
 ## Use this macro to find bag slot ID:
 ```
-/run print(GetMouseFocus():GetParent():GetID()..", "..GetMouseFocus():GetID())
+/run DEFAULT_CHAT_FRAME:AddMessage(GetMouseFocus():GetParent():GetID()..", "..GetMouseFocus():GetID())
 ```
