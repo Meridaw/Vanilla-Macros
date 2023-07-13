@@ -6,9 +6,10 @@
 
 ## How To Use
 
-Either click on the folders and text files on the github page to find more info or 
-click the green code button and select Download ZIP to download the files.
-[Notepad](https://notepad-plus-plus.org/) is useful to read or edit the files.
+- Type / to bring up the search bar to search for keywords
+- click on the folders and text files on the github page to find more info. 
+- click the green code button and select Download ZIP to download the files.
+- [Notepad++](https://notepad-plus-plus.org/) is useful to read or edit the files.
 
 ---
 
