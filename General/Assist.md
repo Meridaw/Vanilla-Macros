@@ -10,8 +10,7 @@
 ```
 
 
-## Non-leaders Assist Leader
-if your not party leader then assist by name
+## Non-leaders Assist Name
 ```
 /run if not IsPartyLeader() then AssistByName("Charname") end
 ```
