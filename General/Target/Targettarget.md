@@ -1,5 +1,5 @@
 ## Targettarget
-target your target target then cast spell
+target your target's target, then cast the spell
 ```
 /run TargetUnit("targettarget") CastSpellByName("spell")
 ```
