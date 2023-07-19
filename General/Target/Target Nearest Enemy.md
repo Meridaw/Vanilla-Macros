@@ -12,7 +12,7 @@ If no target, friendly target, or dead target, then target nearest enemy
 
 
 ## Unit Reaction
-if no target or no hostile target targets nearest enemy
+if no target, no hostile target, then targets nearest enemy
 ```
 /run if GetUnitName("target")==nil or UnitExists("target") and UnitReaction("target","player")>4 then TargetNearestEnemy() end
 ```
