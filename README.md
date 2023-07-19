@@ -6,7 +6,7 @@
 
 ## How To Use
 
-- Type / to bring up the search bar to search for keywords
+- Type / to bring up the search bar to search for keywords.
 - Click on the folders and text files on the github page to find more info. 
 - Click the green code button and select Download ZIP to download the files.
 - [Notepad++](https://notepad-plus-plus.org/) is useful to read or edit the files.
