@@ -1,5 +1,5 @@
 ## Inner Focus Time
-uses Inner Focus once ever 3 min, then cast Power Word: Shield
+uses Inner Focus once ever 3 min, else uses Power Word: Shield
 ```
 /run if not focusTime then focusTime = 0 end
 /run if (GetTime() - focusTime > 180) then CastSpellByName("Inner Focus") focusTime = GetTime() end
