@@ -1,6 +1,6 @@
-## Flare, else Track Hidden (Put Flare in action slot 45)
+## Flare, else Track Hidden
 ```
-/run if GetActionCooldown(45)==0 then CastSpellByName("Flare") else CastSpellByName("Track Hidden")end
+/run c=CastSpellByName t=GetTrackingTexture() if t and strfind(t,"Stealth") then c("Flare") else CastSpellByName("Track Hidden") end
 ```
  
 
