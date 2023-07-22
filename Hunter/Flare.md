@@ -6,5 +6,5 @@
 
 ## Hunter's Mark if target can be attacked, else Flare
 ```
-/Script if UnitCanAttack("player","target") then CastSpellByName("Hunter's Mark") else CastSpellByName("Flare") end;
+/run if UnitCanAttack("player","target") then CastSpellByName("Hunter's Mark") else CastSpellByName("Flare") end;
 ```
