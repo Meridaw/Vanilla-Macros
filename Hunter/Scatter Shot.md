@@ -1,5 +1,5 @@
-## Scatter Shot Check Distance
-targets the nearest enemy and fires a scatter shot if they are in 15 yards range
+## Scatter Shot
+targets the nearest enemy in 15 yards range and fires a scatter shot
 ```
 /console targetNearestDistance 15
 /run TargetNearestEnemy() CastSpellByName("Scatter Shot")
