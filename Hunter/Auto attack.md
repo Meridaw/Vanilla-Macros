@@ -11,13 +11,6 @@ put Auto Shot into action slot 1 for the range attack to work in this macro
 ```
  
 
-## Spammable Auto Shot
-put Auto Shot some place on the bars and replace xx with that slots id
-```
-/script if not IsAutoRepeatAction(xx) then CastSpellByName("Auto Shot"); end
-```
- 
-
 ## Spammable Auto attack
 ```
 /run for z=1,172 do if IsAttackAction(z)then if not IsCurrentAction(z)then UseAction(z);end;end;end;
