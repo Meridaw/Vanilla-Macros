@@ -33,7 +33,7 @@
 - [Console variables](https://wowpedia.fandom.com/wiki/Console_variables?oldid=352709)
 - [Global functions](https://wowpedia.fandom.com/wiki/Global_functions?oldid=270108)
 - [Most Used Macros](https://web.archive.org/web/20060813140631/http://www.wowwiki.com/Most_Used_Macros)
-- [Queriable buff effects](https://wowwiki-archive.fandom.com/wiki/Queriable_buff_effects)
+- [Queriable buff effects](https://wowwiki-archive.fandom.com/wiki/Queriable_buff_effects?oldid=352483)
 - [Useful macros (1.0)](https://wowwiki-archive.fandom.com/wiki/Useful_macros_(1.0))
 - [Widget API](https://wowwiki-archive.fandom.com/wiki/Widget_API?oldid=258293)
 
