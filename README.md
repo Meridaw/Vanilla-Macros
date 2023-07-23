@@ -30,8 +30,8 @@
 ## Wiki 
 
 - [API Functions](https://wowpedia.fandom.com/wiki/World_of_Warcraft_API?oldid=255618)
-- [Console_variables](https://wowpedia.fandom.com/wiki/Console_variables?oldid=352709)
-- [Global_functions](https://wowpedia.fandom.com/wiki/Global_functions?oldid=270108)
+- [Console variables](https://wowpedia.fandom.com/wiki/Console_variables?oldid=352709)
+- [Global functions](https://wowpedia.fandom.com/wiki/Global_functions?oldid=270108)
 - [Most Used Macros](https://web.archive.org/web/20060813140631/http://www.wowwiki.com/Most_Used_Macros)
 - [Queriable buff effects](https://wowwiki-archive.fandom.com/wiki/Queriable_buff_effects)
 - [Useful macros (1.0)](https://wowwiki-archive.fandom.com/wiki/Useful_macros_(1.0))
