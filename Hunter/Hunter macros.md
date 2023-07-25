@@ -15,9 +15,8 @@ As strange as it might sound to have a macro for something as simple as Auto Sho
 Two important functions in particular are added: The automatic targeting, which will allow you to basically point and shoot with your right mouse and Auto Shot keybind, and the function that prevents Auto Shot from being toggled off. Auto Shot is on its own cooldown, independent of the GCD, so it's important to be able to enable it on demand.
 
 You will need to modify this macro if you place it on any key other than 3 on your primary action bar. Please reference this screenshot:
-```
-http://i.imgur.com/VGArn.jpg
-```
+![Alt text](http://i.imgur.com/VGArn.jpg)
+
 And change the 3 in THIS part of the script:
 ```
 IsAutoRepeatAction(3)
