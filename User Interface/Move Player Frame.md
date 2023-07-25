@@ -1,3 +1,10 @@
+## Movable Player Frame 
+enable or disable moving for player frame
+```
+/run if not m then PlayerFrame:SetMovable(1)PlayerFrame:StartMoving()m=true else PlayerFrame:StopMovingOrSizing()PlayerFrame:SetMovable()m=false end
+```
+
+
 ## Move player unit frame
 ```
 /script PlayerFrame:SetMovable(1)PlayerFrame:StartMoving()
@@ -7,18 +14,6 @@
 ## Stop moving player unit frame
 ```
 /script PlayerFrame:StopMovingOrSizing()PlayerFrame:SetMovable()
-```
-
-
-## Move target unit frame
-```
-/script TargetFrame:SetMovable(1)TargetFrame:StartMoving()
-```
-
-
-## Stop moving target unit frame
-```
-/script TargetFrame:StopMovingOrSizing()TargetFrame:SetMovable()
 ```
 
 
