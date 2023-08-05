@@ -14,3 +14,9 @@
 ```
 /run local n="UnitNameNPC"local x=1-GetCVar(n)SetCVar(n,x)SetCVar("UnitNameFriendlyPetName",x)SetCVar("UnitNameEnemyPlayerName",x)
 ```
+
+
+## Toggle Pet name
+```
+/run if PetName then if PetName:IsVisible() then PetName:Hide() else PetName:Show() end end
+```
