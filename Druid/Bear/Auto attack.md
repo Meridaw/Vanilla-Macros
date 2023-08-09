@@ -1,3 +1,9 @@
+## Auto attack
+```
+/run for i=1,120 do if IsCurrentAction(i) then return end end CastSpellByName("Attack")
+```
+
+
 ## Start Melee Attack
 ```
 /run if (not PlayerFrame.inCombat) then AttackTarget() end
