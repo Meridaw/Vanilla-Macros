@@ -27,3 +27,10 @@
 /script TargetNearestEnemy();if UnitIsEnemy("player","target") and not UnitIsDead("target") then CastSpellByName("Sap") end
 /console targetNearestDistance 41
 ```
+
+
+## Spam stealth, sap
+```
+/run local _, _, active = GetShapeshiftFormInfo(1) if not active then CastShapeshiftForm(1)end
+/run CastSpellByName("Sap")
+```
