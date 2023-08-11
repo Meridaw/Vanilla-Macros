@@ -1,10 +1,10 @@
-## Spammable stealth, if shift key down cancel stealth
+## Stealth, if shift key down cancel stealth
 ```
 /run local i,a,sn sn="Stealth" i=0 while a~=sn do i=i+1 a=GetSpellName(i,"spell")end if ({GetSpellCooldown(i,"spell")})[3]~=0 == not IsShiftKeyDown() then CastSpellByName(sn)end
 ```
  
 
-## Spammable stealth
+## Stealth
 ```
 /run local _, _, active = GetShapeshiftFormInfo(1) if not active then CastShapeshiftForm(1)end
 ```
@@ -14,60 +14,27 @@
 ```
 /run local _, _, active = GetShapeshiftFormInfo(1) if active then CastShapeshiftForm(1)end
 ```
- 
 
-## Stealth + Kidney/Cheap Shot
-```
-/script if UnitAffectingCombat("player")then CastSpellByName("Kidney Shot")else local _, _, active = GetShapeshiftFormInfo(1) if not active then CastShapeshiftForm(1)end end
-/cast Cheap Shot
-```
- 
 
-## Stealth (Put Stealth in action slot 37)
+## Stealth
 ```
-/script if not IsCurrentAction(37) then UseAction(37) end;
+/run for i=1,120 do if IsCurrentAction(i) then return end end CastSpellByName("Stealth")
 ```
  
 
-## Unstealth: (Put Stealth in action slot 37)
+## Stealth 
+uses stealth if it's not active. stealth needs to be in action slot 37.
 ```
-/script if IsCurrentAction(37) then UseAction(37) end;
+/run if not IsCurrentAction(37) then UseAction(37) end;
 ```
  
 
-## Spam stealth, ambush
+## Unstealth: 
+remove stealth. stealth needs to be in action slot 37.
 ```
-/run local _, _, active = GetShapeshiftFormInfo(1) if not active then CastShapeshiftForm(1)end
-/run CastSpellByName("Ambush")
+/run if IsCurrentAction(37) then UseAction(37) end;
 ```
-
-
-## Spam stealth, cheap shot
-```
-/run local _, _, active = GetShapeshiftFormInfo(1) if not active then CastShapeshiftForm(1)end
-/run CastSpellByName("Cheap Shot")
-```
-
-
-## Spam stealth, garrote
-```
-/run local _, _, active = GetShapeshiftFormInfo(1) if not active then CastShapeshiftForm(1)end
-/run CastSpellByName("Garrote")
-```
-
-
-## Spam stealth, sap
-```
-/run local _, _, active = GetShapeshiftFormInfo(1) if not active then CastShapeshiftForm(1)end
-/run CastSpellByName("Sap")
-```
-
-
-## Auto attack, hemo
-```
-/run for z=1,172 do if IsAttackAction(z)then if not IsCurrentAction(z)then UseAction(z);end;end;end;
-/run CastSpellByName("Hemorrhage")
-```
+ 
  
 ## Here you can see where the actionID slots in your actionbars are:
 
