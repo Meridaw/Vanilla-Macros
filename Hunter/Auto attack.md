@@ -19,6 +19,7 @@ uses a loop to check if attack is set to auto-repeat
  
 
 ## Spammable Auto attack
+this one is more reliable. but it requires auto attack to be found on the action bar.
 ```
 /run for z=1,172 do if IsAttackAction(z)then if not IsCurrentAction(z)then UseAction(z);end;end;end;
 ```
