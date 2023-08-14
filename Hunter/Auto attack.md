@@ -6,13 +6,14 @@ put Auto Shot into action slot 1 for the range attack to work in this macro
 
 
 ## Auto attack
-uses a loop to check if attack is set to auto-repeat
+uses a loop to check if attack is set to auto-repeat.
 ```
 /run for i=1,120 do if IsCurrentAction(i) then return end end CastSpellByName("Attack")
 ```
 
 
 ## Start Melee Attack
+this one is decent enough but it is known to be unreliable if spammed.
 ```
 /run if (not PlayerFrame.inCombat) then AttackTarget() end
 ```
