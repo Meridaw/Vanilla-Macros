@@ -1,4 +1,5 @@
 ## Auto attack
+uses a loop to check if attack is set to auto-repeat
 ```
 /run for i=1,120 do if IsCurrentAction(i) then return end end CastSpellByName("Attack")
 ```
@@ -6,7 +7,7 @@
 
 ## Start Melee Attack
 ```
-/script if (not PlayerFrame.inCombat) then AttackTarget() end
+/run if (not PlayerFrame.inCombat) then AttackTarget() end
 ```
  
 
