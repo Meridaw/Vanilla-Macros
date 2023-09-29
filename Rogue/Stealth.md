@@ -1,24 +1,12 @@
-## Stealth, if shift key down cancel stealth
-```
-/run local i,a,sn sn="Stealth" i=0 while a~=sn do i=i+1 a=GetSpellName(i,"spell")end if ({GetSpellCooldown(i,"spell")})[3]~=0 == not IsShiftKeyDown() then CastSpellByName(sn)end
-```
- 
-
 ## Stealth
 ```
 /run local _, _, active = GetShapeshiftFormInfo(1) if not active then CastShapeshiftForm(1)end
 ```
- 
-
-## Unstealth
-```
-/run local _, _, active = GetShapeshiftFormInfo(1) if active then CastShapeshiftForm(1)end
-```
 
 
 ## Stealth
 ```
-/run for i=1,120 do if IsCurrentAction(i) then return end end CastSpellByName("Stealth")
+/run for i=1,120 do if IsCurrentAction(i) and not IsAttackAction(i) then return end end CastSpellByName("Stealth")
 ```
  
 
@@ -29,10 +17,9 @@ uses stealth if it's not active. stealth needs to be in action slot 37.
 ```
  
 
-## Unstealth: 
-remove stealth. stealth needs to be in action slot 37.
+## Stealth, if shift key down cancel stealth
 ```
-/run if IsCurrentAction(37) then UseAction(37) end;
+/run local i,a,sn sn="Stealth" i=0 while a~=sn do i=i+1 a=GetSpellName(i,"spell")end if ({GetSpellCooldown(i,"spell")})[3]~=0 == not IsShiftKeyDown() then CastSpellByName(sn)end
 ```
  
  
