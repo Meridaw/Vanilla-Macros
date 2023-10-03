@@ -1,7 +1,7 @@
 ## Riposte / Sinister Strike
 scans your action bars for Riposte by texture name and uses it if possible. else uses Sinister Strike.
 ```
-/run for i=1,120 do local t=GetActionTexture(i) if t and string.find(t,"Challange") then if IsUsableAction(i) and (UnitMana("Player")>=10) then UseAction(i) elseif (UnitMana("Player")>=40) then CastSpellByName("Sinister Strike") end end end
+/run for i=1,120 do local t=GetActionTexture(i) if t and string.find(t,"Challange") and IsUsableAction(i) and (UnitMana("Player")>=10) then UseAction(i) end if (UnitMana("Player")>=40) then CastSpellByName("Sinister Strike") end end
 ```
 
 
