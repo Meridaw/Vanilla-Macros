@@ -1,3 +1,9 @@
+## Feral Faerie Fire / Claw
+```
+/run i=1;d=nil;while(UnitDebuff("target",i))do if(strfind(UnitDebuff("target",i),"FaerieFire"))then d=1;end;i=i+1;end;c=CastSpellByName;if(d)then c("Claw")else c("Faerie Fire (Feral)()")end
+```
+
+
 ## Feral Faerie Fire when shapeshifted, Faerie Fire if not
 ```
 /script i=1;m=0;while(UnitBuff("player",i)~=nil) do if(strfind(UnitBuff("player",i),"Form")~=nil) then m=1; end;i=i+1;end; c=CastSpellByName; if(m==1) then c("Faerie Fire (Feral)()");else c("Faerie Fire");end;
