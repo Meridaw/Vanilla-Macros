@@ -24,6 +24,7 @@
 - [Macro per maghi](https://www.freeforumzone.com/discussione.aspx?idd=5581207)
 - [Priest addons and Macros](http://orderofsargeras.com/phpBB2_resto/viewtopic.php?t=14&sid=d4903119e59b7a30276b0df4e64b3aed)
 - [Graguk's Warlock Macros](http://blue.cardplace.com/cache/wow-warlock/905421.htm)
+- [Hunter Macros & Tips [Redux]](https://forum.nostalrius.org/viewtopic.php?f=38&t=21017)
 
 ---
 
