@@ -20,3 +20,10 @@ uses Sunder Armor, clears target if target is sheeped, shows target's armor
 /run for i=1,16 do if string.find(tostring(UnitDebuff("target",i)),"Polymorph") then ClearTarget() break end end
 /run a=UnitResistance("target",0) if a~=lastArmor then SendChatMessage(a,"SAY") lastArmor=a end
 ```
+
+
+## Sunder if there's not 5 sunders
+this one casts sunder if there's not 5 sunders
+```
+/script local b,c,i; for i = 1, 16 do b = UnitDebuff("target", i); if b and strfind(b, "Ability_Warrior_Sunder") then b, c = UnitDebuff("target", i); break; end; end; if not c or c < 5 then CastSpellByName("Sunder Armor") end;
+```
